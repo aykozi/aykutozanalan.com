@@ -64,10 +64,10 @@
 <!-- wp:group {"className":"gcols","layout":{"type":"default"}} -->
 <div class="wp-block-group gcols"><!-- wp:group {"className":"gcol","layout":{"type":"default"}} -->
 <div class="wp-block-group gcol"><!-- wp:html -->
-<div class="gsrc"><span class="kick">Türkiye</span><a href="https://www.aa.com.tr/tr/ekonomi" target="_blank" rel="noopener">Anadolu Ajansı · Ekonomi</a></div>
+<div class="gsrc"><span class="kick">Türkiye</span><a href="https://www.bloomberght.com/" target="_blank" rel="noopener">Bloomberg HT</a></div>
 <!-- /wp:html -->
 
-<!-- wp:rss {"feedURL":"https://www.aa.com.tr/tr/rss/default?cat=ekonomi","itemsToShow":4,"displayExcerpt":true,"displayDate":true,"excerptLength":28,"openInNewTab":true} /--></div>
+<!-- wp:rss {"feedURL":"https://www.bloomberght.com/rss","itemsToShow":4,"displayExcerpt":true,"displayDate":true,"excerptLength":28,"openInNewTab":true} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"gcol","layout":{"type":"default"}} -->
