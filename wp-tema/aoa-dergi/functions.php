@@ -20,3 +20,14 @@ add_action( 'after_setup_theme', function () {
 add_action( 'init', function () {
 	register_block_pattern_category( 'aoa', array( 'label' => 'AOA Dergi' ) );
 } );
+
+/*
+ * Elementor eklentisi kalıntısı: global "kit" sınıfı tüm bağlantıları
+ * kendi vurgu rengine boyuyor. Bu tema Elementor kullanmadığı için
+ * sınıfı gövdeden kaldırıyoruz.
+ */
+add_filter( 'body_class', function ( $classes ) {
+	return array_values( array_filter( $classes, function ( $c ) {
+		return 0 !== strpos( $c, 'elementor-kit-' );
+	} ) );
+}, 99 );
