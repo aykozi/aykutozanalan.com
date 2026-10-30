@@ -1,0 +1,109 @@
+{
+ "$schema": "https://schemas.wp.org/trunk/theme.json",
+ "version": 3,
+ "settings": {
+  "appearanceTools": false,
+  "layout": {
+   "contentSize": "720px",
+   "wideSize": "1160px"
+  },
+  "color": {
+   "palette": [
+    {
+     "slug": "paper",
+     "name": "Kâğıt",
+     "color": "#FBFAF7"
+    },
+    {
+     "slug": "ink",
+     "name": "Mürekkep",
+     "color": "#1C2321"
+    },
+    {
+     "slug": "green",
+     "name": "Koyu yeşil",
+     "color": "#14322B"
+    },
+    {
+     "slug": "amber",
+     "name": "Kehribar",
+     "color": "#8A5A12"
+    },
+    {
+     "slug": "file",
+     "name": "Dosya laciverti",
+     "color": "#0E1A2B"
+    }
+   ]
+  },
+  "typography": {
+   "fontFamilies": [
+    {
+     "slug": "serif",
+     "name": "Literata",
+     "fontFamily": "\"Literata\", Georgia, serif"
+    },
+    {
+     "slug": "sans",
+     "name": "Work Sans",
+     "fontFamily": "\"Work Sans\", system-ui, sans-serif"
+    },
+    {
+     "slug": "mono",
+     "name": "IBM Plex Mono",
+     "fontFamily": "\"IBM Plex Mono\", ui-monospace, monospace"
+    }
+   ]
+  },
+  "spacing": {
+   "blockGap": true
+  },
+  "useRootPaddingAwareAlignments": false
+ },
+ "styles": {
+  "spacing": {
+   "blockGap": "0px",
+   "padding": {
+    "top": "0",
+    "bottom": "0",
+    "left": "0",
+    "right": "0"
+   }
+  },
+  "color": {
+   "background": "var(--paper)",
+   "text": "var(--ink)"
+  },
+  "typography": {
+   "fontFamily": "var(--wp--preset--font-family--sans)"
+  }
+ },
+ "templateParts": [
+  {
+   "name": "header",
+   "title": "Üst bölüm",
+   "area": "header"
+  },
+  {
+   "name": "footer",
+   "title": "Alt bölüm",
+   "area": "footer"
+  }
+ ],
+ "customTemplates": [
+  {
+   "name": "page-dosyalar",
+   "title": "Dosyalar",
+   "postTypes": [
+    "page"
+   ]
+  },
+  {
+   "name": "page-hakkinda",
+   "title": "Hakkında",
+   "postTypes": [
+    "page"
+   ]
+  }
+ ]
+}
