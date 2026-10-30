@@ -54,6 +54,30 @@
 <!-- /wp:html -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","className":"sec gundem","anchor":"gundem","layout":{"type":"default"}} -->
+<section id="gundem" class="wp-block-group sec gundem"><!-- wp:html -->
+<div class="sec-head"><h2>Ekonomi ve finans gündemi</h2><p>Kaynaklardan otomatik derlenen kısa özetler. Haberin tamamı için başlığa tıklayın; kaynak sitede açılır.</p></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"gcols","layout":{"type":"default"}} -->
+<div class="wp-block-group gcols"><!-- wp:group {"className":"gcol","layout":{"type":"default"}} -->
+<div class="wp-block-group gcol"><!-- wp:html -->
+<div class="gsrc"><span class="kick">Türkiye</span><a href="https://www.aa.com.tr/tr/ekonomi" target="_blank" rel="noopener">Anadolu Ajansı · Ekonomi</a></div>
+<!-- /wp:html -->
+
+<!-- wp:rss {"feedURL":"https://www.aa.com.tr/tr/rss/default?cat=ekonomi","itemsToShow":4,"displayExcerpt":true,"displayDate":true,"excerptLength":28,"openInNewTab":true} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"gcol","layout":{"type":"default"}} -->
+<div class="wp-block-group gcol"><!-- wp:html -->
+<div class="gsrc"><span class="kick">Dünya</span><a href="https://tr.euronews.com/business" target="_blank" rel="noopener">Euronews Türkçe · Ekonomi</a></div>
+<!-- /wp:html -->
+
+<!-- wp:rss {"feedURL":"https://tr.euronews.com/rss?level=vertical&name=business","itemsToShow":4,"displayExcerpt":true,"displayDate":true,"excerptLength":28,"openInNewTab":true} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
