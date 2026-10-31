@@ -56,29 +56,7 @@
 <!-- /wp:query --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","className":"sec gundem","anchor":"gundem","layout":{"type":"default"}} -->
-<section id="gundem" class="wp-block-group sec gundem"><!-- wp:html -->
-<div class="sec-head"><h2>Ekonomi ve finans gündemi</h2><p>Kaynaklardan otomatik derlenen kısa özetler. Haberin tamamı için başlığa tıklayın; kaynak sitede açılır.</p></div>
-<!-- /wp:html -->
-
-<!-- wp:group {"className":"gcols","layout":{"type":"default"}} -->
-<div class="wp-block-group gcols"><!-- wp:group {"className":"gcol","layout":{"type":"default"}} -->
-<div class="wp-block-group gcol"><!-- wp:html -->
-<div class="gsrc"><span class="kick">Türkiye</span><a href="https://www.bloomberght.com/" target="_blank" rel="noopener">Bloomberg HT</a></div>
-<!-- /wp:html -->
-
-<!-- wp:rss {"feedURL":"https://www.bloomberght.com/rss","itemsToShow":4,"displayExcerpt":true,"displayDate":true,"excerptLength":28,"openInNewTab":true} /--></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"gcol","layout":{"type":"default"}} -->
-<div class="wp-block-group gcol"><!-- wp:html -->
-<div class="gsrc"><span class="kick">Dünya</span><a href="https://tr.euronews.com/business" target="_blank" rel="noopener">Euronews Türkçe · Ekonomi</a></div>
-<!-- /wp:html -->
-
-<!-- wp:rss {"feedURL":"https://tr.euronews.com/rss?level=vertical&name=business","itemsToShow":4,"displayExcerpt":true,"displayDate":true,"excerptLength":28,"openInNewTab":true} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></section>
-<!-- /wp:group --></div>
+</div>
 <!-- /wp:group -->
 
 <!-- wp:html -->
@@ -135,14 +113,14 @@
 <!-- wp:group {"className":"w","layout":{"type":"default"}} -->
 <div class="wp-block-group w"><!-- wp:group {"tagName":"section","className":"sec news","layout":{"type":"default"}} -->
 <section class="wp-block-group sec news"><!-- wp:html -->
-<div><h2>Haftalık not</h2><p>Her cuma, denetim ve uyum dünyasından seçilmiş gelişmeler ve kısa bir yorum.</p></div>
+<div><h2>Yeni yazılar e-postanızda</h2><p>Her ay bir analiz ve bir suistimal dosyası yayımlıyorum. Abone olursanız yeni yazılar yayımlandığında e-postanıza gelir.</p></div>
 <!-- /wp:html -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:jetpack/subscriptions {"showSubscribersTotal":false,"buttonOnNewLine":false,"submitButtonText":"Abone ol"} /-->
 
 <!-- wp:html -->
-<p class="kvkk">E-posta adresiniz yalnızca haftalık notun gönderimi için kullanılır; dilediğiniz an abonelikten çıkabilirsiniz.</p>
+<p class="kvkk">E-posta adresiniz yalnızca yeni yazıların gönderimi için kullanılır; dilediğiniz an abonelikten çıkabilirsiniz. Ayrıntılar: <a href="/gizlilik/">Gizlilik ve kişisel veriler</a>.</p>
 <!-- /wp:html --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group --></div>

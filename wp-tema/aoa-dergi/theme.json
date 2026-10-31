@@ -104,6 +104,13 @@
    "postTypes": [
     "page"
    ]
+  },
+  {
+   "name": "page-gizlilik",
+   "title": "Gizlilik",
+   "postTypes": [
+    "page"
+   ]
   }
  ]
 }

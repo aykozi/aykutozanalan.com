@@ -26,7 +26,7 @@
 			} catch (e) { select(); }
 		});
 	});
-	if (/^#dosya-0\d$/.test(location.hash)) {
+	if (/^#dosya-\d{2}$/.test(location.hash)) {
 		var d = document.querySelector(location.hash);
 		if (d && d.tagName === 'DETAILS') { d.open = true; d.scrollIntoView(); }
 	}

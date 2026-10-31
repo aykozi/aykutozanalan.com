@@ -5,18 +5,18 @@
  * Categories: aoa
  * Inserter: no
  */
-$foto = esc_url( get_theme_file_uri( 'assets/foto.jpg' ) );
+$portre = esc_url( get_theme_file_uri( 'assets/portre-silik.webp' ) );
 ?>
 <!-- wp:html -->
 <div class="w">
 <div class="ahero">
-<div class="photo"><img src="<?php echo $foto; ?>" alt="Aykut Ozan Alan" width="490" height="590"></div>
-<div>
+<img class="portre" src="<?php echo $portre; ?>" alt="" width="980" height="1180" aria-hidden="true">
+<div class="ahero-t">
 <h1>Aykut Ozan Alan</h1>
 <p class="role">Siyaset bilimi ve kamu yönetimi doktoru · Sertifikalı İç Denetçi (CIA)</p>
 <div class="bio">
 <p>On beş yıldır denetim, suistimal incelemesi ve uyum alanında çalışıyorum. Kariyerime Toprak Mahsulleri Ofisi'nde müfettiş yardımcısı olarak başladım; 35 bölge müdürlüğü ve 190 birimden oluşan bir kamu kuruluşunda mali, operasyonel ve uyum denetimleri yürüttüm, başmüfettiş olarak denetim ekiplerini yönettim.</p>
-<p>2023'ten bu yana Limak Grubu'nda iç denetim müdürüyüm. Akademik ilgim, kamu yönetimi ve tarım politikalarının sahadaki karşılığı üzerine. Bu sitede denetim, yönetişim ve suistimal önleme üzerine yazıyorum.</p>
+<p>2023'ten bu yana özel sektörde iç denetim müdürü olarak çalışıyorum. Akademik ilgim, kamu yönetimi ve tarım politikalarının sahadaki karşılığı üzerine. Bu sitede denetim, yönetişim ve suistimal önleme üzerine yazıyorum.</p>
 </div>
 <div class="jump"><a href="#akademik">Akademik çalışmalar</a><a href="#kariyer">Kariyer</a><a href="#iletisim">İletişim</a></div>
 </div>
@@ -26,7 +26,7 @@ $foto = esc_url( get_theme_file_uri( 'assets/foto.jpg' ) );
 <div>
 <h2 class="h2s">Kariyer</h2>
 <div class="time">
-<div><span class="y">2023 – bugün</span><span><h3>İç Denetim Müdürü</h3><span class="org">Limak Grubu, Ankara</span><p>Çok sektörlü bir grupta iç denetim fonksiyonunun yönetimi, suistimal ve etik incelemeleri.</p></span></div>
+<div><span class="y">2023 – bugün</span><span><h3>İç Denetim Müdürü</h3><span class="org">Özel sektör, Ankara</span><p>İç denetim fonksiyonunun yönetimi; suistimal ve etik incelemeleri.</p></span></div>
 <div><span class="y">2011 – 2023</span><span><h3>Müfettiş Yardımcısı, Müfettiş, Başmüfettiş</h3><span class="org">Toprak Mahsulleri Ofisi, Ankara</span><p>Mali, operasyonel ve uyum denetimleri; yolsuzluk ve usulsüzlük soruşturmaları; denetim ekiplerinin gözetimi.</p></span></div>
 </div>
 </div>
@@ -34,8 +34,7 @@ $foto = esc_url( get_theme_file_uri( 'assets/foto.jpg' ) );
 <h2 class="h2s">Sertifikalar ve lisanslar</h2>
 <table class="ledger">
 <tr><td>Certified Internal Auditor (CIA)<small>The Institute of Internal Auditors</small></td><td class="ok">Nisan 2022</td></tr>
-<tr><td>Uyum Görevlisi Lisansı<small>MASAK</small></td><td>Sınav başarılı, lisans süreci devam ediyor</td></tr>
-<tr><td>Sermaye Piyasası Faaliyetleri Düzey 3<small>SPK / SPL</small></td><td>Sınav süreci devam ediyor</td></tr>
+<tr><td>Uyum Görevlisi Lisansı<small>MASAK</small></td><td>Sınav başarılı, lisans başvurusu yapıldı</td></tr>
 </table>
 <h2 class="h2s" style="margin-top:28px">Diller</h2>
 <p>Türkçe (ana dil), İngilizce (tam çalışma yeterliliği), Rusça (sınırlı)</p>
