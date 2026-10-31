@@ -1,4 +1,4 @@
-LINK = lambda slug: '/?name=' + slug
+LINK = lambda slug: '/' + slug + '/'
 S = dict(
  A1='masak-uyum-gorevlisi-lisans-rejimi',
  A2='e-fatura-e-defter-ic-denetim',
