@@ -3,7 +3,7 @@ Theme Name: AOA Dergi
 Theme URI: https://aykutozanalan.com
 Author: Aykut Ozan Alan
 Description: aykutozanalan.com için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.0.7
+Version: 1.0.8
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -164,8 +164,8 @@ footer.ft a{color:var(--soft)}
 
 /* ===== About page ===== */
 /* Portre: arka planda, sayfa tonuna gömülü; dekoratif (alt="") */
-.ahero{position:relative;isolation:isolate;overflow:hidden;min-height:420px;padding-block:72px 44px;border-bottom:1px solid var(--rule)}
-.ahero .portre{position:absolute;z-index:-1;top:24px;right:5%;height:94%;width:auto;max-width:none;opacity:.82;pointer-events:none;user-select:none}
+.ahero{position:relative;isolation:isolate;overflow:hidden;min-height:380px;padding-block:72px 44px;border-bottom:1px solid var(--rule)}
+.ahero .portre{position:absolute;z-index:-1;top:auto;bottom:0;right:8%;height:min(340px,78%);width:auto;max-width:none;opacity:.82;pointer-events:none;user-select:none}
 .ahero-t{position:relative;max-width:min(62ch,60%)}
 @media (prefers-color-scheme: dark){.ahero .portre{opacity:.5}}
 .ahero h1{font-size:clamp(32px,4vw,44px);font-weight:600;letter-spacing:-.01em}
@@ -225,8 +225,8 @@ footer.ft a{color:var(--soft)}
   .dos summary{grid-template-columns:52px minmax(0,1fr)}
   .dos .tog{grid-column:2;justify-self:start}
   .dos .body{grid-template-columns:minmax(0,1fr);padding-left:0}
-  .ahero{min-height:0;padding-top:150px}
-  .ahero .portre{top:8px;right:-8%;height:270px;opacity:.5}
+  .ahero .portre{top:12px;bottom:auto;right:-4%;height:200px;opacity:.5}
+  .ahero{min-height:0;padding-top:120px}
   .ahero-t{max-width:none}
   .time > div,.pub{grid-template-columns:minmax(0,1fr);gap:4px}
   .top .w{flex-wrap:wrap}
