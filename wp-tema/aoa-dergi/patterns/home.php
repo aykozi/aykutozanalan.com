@@ -103,11 +103,11 @@
 <div class="sec-head"><h2>Rakamlarla mesleki suistimal</h2></div>
 <div class="nums">
 <div><b>%5</b><span>Kuruluşların suistimale kaptırdığı tahmini yıllık gelir payı</span></div>
-<div><b>1.921</b><span>138 ülkede incelenen gerçek suistimal vakası</span></div>
+<div><b>2.402</b><span>143 ülkede incelenen gerçek suistimal vakası</span></div>
 <div><b>%50+</b><span>İç kontrol eksikliği ya da kontrollerin aşılmasıyla bağlantılı vakalar</span></div>
-<div><b>%63</b><span>Sürpriz denetimlerin suistimal kaybında sağladığı azalma</span></div>
+<div><b>%43</b><span>Bir ihbarla ortaya çıkan vakalar; ihbarların yarısından fazlası çalışanlardan</span></div>
 </div>
-<p class="src-note">Kaynak: ACFE, <a href="https://www.acfe.com/fraud-resources/report-to-the-nations-archive" target="_blank" rel="noopener">Occupational Fraud 2024: A Report to the Nations</a></p>
+<p class="src-note">Kaynak: ACFE, <a href="https://www.acfe.com/about-the-acfe/newsroom-for-media/press-releases/press-release-detail?s=occupational-fraud-2026-a-report-to-the-nations-pr" target="_blank" rel="noopener">Occupational Fraud 2026: A Report to the Nations</a> (Mayıs 2026)</p>
 </section>
 
 <section class="sec duo" id="kutuphane">

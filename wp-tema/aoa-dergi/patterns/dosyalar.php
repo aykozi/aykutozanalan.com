@@ -24,6 +24,7 @@
         <div><h3>İZLER</h3><ul><li>Aynı tedarikçiden aynı tutar ve tarihte mükerrer fatura</li><li>Onay limitinin hemen altında kalan tutarlar</li><li>Hafta sonu ve tatil günlerinde kesilen ya da kaydedilen belgeler</li><li>Yuvarlak tutarların olağan dışı yoğunluğu</li><li>Yeni açılan tedarikçiye kısa sürede yüksek ödeme</li></ul></div>
         <div><h3>KONTROLLER</h3><ul><li>Belge verisinin periyodik ve otomatik taranması</li><li>Tedarikçi ana verisinde değişiklik için ikinci onay</li><li>Benford analiziyle tutar dağılımının izlenmesi</li><li>Ödeme öncesi mükerrerlik kontrolü</li></ul></div>
         <p class="note">Bir gösterge tek başına suistimal kanıtı değildir; incelemeye nereden başlanacağını gösterir.</p>
+      <p class="more"><a href="/dosya-01-e-fatura-e-defter-suistimal-izleri/">Dosyanın tam metni: izler, analizler, kontroller ve kaynaklar &rarr;</a></p>
       </div>
     </details>
     <details class="dos" id="dosya-02">
@@ -31,6 +32,7 @@
       <div class="body">
         <div><h3>İZLER</h3><ul><li>Çalışan ile tedarikçi arasında adres, telefon ya da IBAN eşleşmesi</li><li>Teklif veren firmaların sırayla kazandığı ihaleler</li><li>Doğrudan ve tek kaynaktan alımların artışı</li><li>Onay limitini aşmamak için bölünmüş siparişler</li><li>Belirli bir firmaya göre yazılmış şartnameler</li></ul></div>
         <div><h3>KONTROLLER</h3><ul><li>Yıllık çıkar çatışması beyanı</li><li>Tedarikçi ve çalışan verisinin karşılaştırılması</li><li>Satın alma ile onay yetkisinin ayrılması</li><li>Rotasyon ve yetki matrisinin gözden geçirilmesi</li></ul></div>
+      <p class="more"><a href="/dosya-02-satin-almada-cikar-catismasi/">Dosyanın tam metni: izler, analizler, kontroller ve kaynaklar &rarr;</a></p>
       </div>
     </details>
     <details class="dos" id="dosya-03">
@@ -38,6 +40,7 @@
       <div class="body">
         <div><h3>İZLER</h3><ul><li>Faturada yazan işi yapacak kapasitesi olmayan tedarikçi</li><li>Ödemenin dolaylı yollarla geri dönmesi</li><li>Sevk, teslim ve kabul belgelerinin eksikliği</li><li>Faturayla uyumsuz stok ve üretim hareketleri</li></ul></div>
         <div><h3>KONTROLLER</h3><ul><li>Tedarikçi kabulünde kapasite ve faaliyet doğrulaması</li><li>Teslim alma ile fatura onayının ayrılması</li><li>Mal ve hizmet akışının belgeyle eşleştirilmesi</li></ul></div>
+      <p class="more"><a href="/dosya-03-sahte-ve-yaniltici-belge/">Dosyanın tam metni: izler, analizler, kontroller ve kaynaklar &rarr;</a></p>
       </div>
     </details>
     <details class="dos" id="dosya-04">
@@ -45,6 +48,7 @@
       <div class="body">
         <div><h3>İZLER</h3><ul><li>Birden fazla çalışana aynı IBAN</li><li>Bordro ile sosyal güvenlik kayıtları arasında uyuşmazlık</li><li>İşten ayrılan çalışana devam eden ödeme</li><li>Olağan dışı fazla mesai ve izin hareketleri</li></ul></div>
         <div><h3>KONTROLLER</h3><ul><li>Bordro ile personel kayıtlarının periyodik mutabakatı</li><li>Banka hesabı değişikliğinde bağımsız teyit</li><li>Ayrılış sürecinde bordro kapatma kontrolü</li></ul></div>
+      <p class="more"><a href="/dosya-04-bordro-suistimali-hayalet-calisan/">Dosyanın tam metni: izler, analizler, kontroller ve kaynaklar &rarr;</a></p>
       </div>
     </details>
     <details class="dos" id="dosya-05">
@@ -52,6 +56,7 @@
       <div class="body">
         <div><h3>İZLER</h3><ul><li>Olağan dışı kısa ilan süreleri</li><li>Sürekli tek teklif gelen alımlar</li><li>Yaklaşık maliyete çok yakın teklifler</li><li>Sözleşme sonrası sık ve yüksek tutarlı değişiklikler</li></ul></div>
         <div><h3>KONTROLLER</h3><ul><li>İhale verisinin göstergelerle düzenli taranması</li><li>Yaklaşık maliyet hesabının bağımsız gözden geçirilmesi</li><li>Sözleşme değişikliklerinde ek onay</li></ul></div>
+      <p class="more"><a href="/dosya-05-kamu-ihalelerinde-usulsuzluk-gostergeleri/">Dosyanın tam metni: izler, analizler, kontroller ve kaynaklar &rarr;</a></p>
       </div>
     </details>
     <details class="dos" id="dosya-06">
@@ -59,6 +64,7 @@
       <div class="body">
         <div><h3>İZLER</h3><ul><li>Faaliyetle orantısız nakit yoğunluğu</li><li>Gerçek faydalanıcısı belirsiz karmaşık ortaklık yapıları</li><li>Yüksek riskli ülkelerle açıklanamayan işlemler</li><li>Fatura değeriyle uyumsuz mal ve hizmet fiyatları</li></ul></div>
         <div><h3>KONTROLLER</h3><ul><li>Müşteri ve tedarikçi için risk temelli tanıma</li><li>Gerçek faydalanıcının tespiti</li><li>Şüpheli işlem bildirimi süreci</li></ul></div>
+      <p class="more"><a href="/dosya-06-kara-para-aklama-tipolojileri/">Dosyanın tam metni: izler, analizler, kontroller ve kaynaklar &rarr;</a></p>
       </div>
     </details>
   </div></div>
