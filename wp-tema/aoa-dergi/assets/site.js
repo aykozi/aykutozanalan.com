@@ -101,6 +101,11 @@
 		track.appendChild(copy);
 		function hiz() { track.style.animationDuration = Math.max(30, set.offsetWidth / 45) + 's'; }
 		hiz(); window.addEventListener('resize', hiz);
+		// fareyle tıklanan bağlantı odakta kalıp şeridi durdurmasın
+		track.addEventListener('click', function (e) {
+			var a = e.target.closest && e.target.closest('a');
+			if (a && e.detail > 0) { setTimeout(function () { a.blur(); }, 0); }
+		});
 		w.classList.add('tk-on');
 	})();
 })();

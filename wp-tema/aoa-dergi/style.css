@@ -3,7 +3,7 @@ Theme Name: AOA Dergi
 Theme URI: https://aykutozanalan.com
 Author: Aykut Ozan Alan
 Description: aykutozanalan.com için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.5.1
+Version: 1.5.2
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -328,7 +328,7 @@ footer.ft a{color:var(--soft)}
 .ticker .tk-track{display:flex;width:max-content}
 .ticker .tk-set{display:flex;align-items:center;gap:18px;padding-right:18px;flex:none}
 .ticker.tk-on .tk-track,.ticker .tk-on .tk-track{animation:tk-akis 60s linear infinite}
-.ticker .tk-view:hover .tk-track,.ticker .tk-view:focus-within .tk-track{animation-play-state:paused}
+.ticker .tk-view:hover .tk-track,.ticker .tk-view:has(a:focus-visible) .tk-track{animation-play-state:paused}
 @keyframes tk-akis{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .ticker .tk-still .tk-view{overflow-x:auto;scrollbar-width:none;-webkit-mask-image:none;mask-image:none}
 .ticker .tk-still .tk-view::-webkit-scrollbar{display:none}
