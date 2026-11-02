@@ -69,4 +69,28 @@
 			}, { rootMargin: '120px' }).observe(box);
 		});
 	})();
+	(function () {
+		// gündem şeridi: içerik sürekli akar; üzerine gelince ya da klavyeyle odaklanınca durur
+		var w = document.querySelector('.ticker .w');
+		if (!w || w.querySelector('.tk-view')) { return; }
+		var lbl = w.querySelector('.lbl');
+		var view = document.createElement('div'); view.className = 'tk-view';
+		var track = document.createElement('div'); track.className = 'tk-track';
+		var set = document.createElement('div'); set.className = 'tk-set';
+		Array.prototype.slice.call(w.children).forEach(function (el) {
+			if (el === lbl || el.classList.contains('components-placeholder')) { return; }
+			if (el.classList.contains('wp-block-rss') && !el.querySelector('li')) { return; }
+			set.appendChild(el);
+		});
+		if (!set.querySelector('a')) { return; }
+		track.appendChild(set); view.appendChild(track); w.appendChild(view);
+		if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { w.classList.add('tk-still'); return; }
+		var copy = set.cloneNode(true);
+		copy.setAttribute('aria-hidden', 'true');
+		copy.querySelectorAll('a').forEach(function (a) { a.setAttribute('tabindex', '-1'); });
+		track.appendChild(copy);
+		function hiz() { track.style.animationDuration = Math.max(30, set.offsetWidth / 45) + 's'; }
+		hiz(); window.addEventListener('resize', hiz);
+		w.classList.add('tk-on');
+	})();
 })();
