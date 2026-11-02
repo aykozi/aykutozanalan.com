@@ -31,3 +31,14 @@ add_filter( 'body_class', function ( $classes ) {
 		return 0 !== strpos( $c, 'elementor-kit-' );
 	} ) );
 }, 99 );
+
+/*
+ * Dosya kategorisindeki yazılar başlığı videolu şeritte gösteren
+ * single-dosya şablonunu kullanır.
+ */
+add_filter( 'single_template_hierarchy', function ( $templates ) {
+	if ( is_singular( 'post' ) && has_category( 'dosya' ) ) {
+		array_unshift( $templates, 'single-dosya.php' );
+	}
+	return $templates;
+} );
