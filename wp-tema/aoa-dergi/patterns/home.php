@@ -5,6 +5,7 @@
  * Categories: aoa
  * Inserter: no
  */
+$aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 ?>
 <!-- wp:group {"className":"w","layout":{"type":"default"}} -->
 <div class="wp-block-group w"><!-- wp:group {"tagName":"section","className":"lead","layout":{"type":"default"}} -->
@@ -60,7 +61,7 @@
 <!-- /wp:group -->
 
 <!-- wp:html -->
-<section class="fileband" aria-labelledby="dosya-baslik"><div class="w">
+<section class="fileband has-bgv" aria-labelledby="dosya-baslik"><div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>dosyalar"></div><div class="w">
 <div>
 <div class="fno">DOSYALAR</div>
 <h2 id="dosya-baslik">Suistimal çoğu zaman kayıtlarda görünür. Mesele nereye bakacağını bilmek.</h2>
@@ -100,7 +101,7 @@
 <li><a href="https://www.acfe.com/" target="_blank" rel="noopener">ACFE kaynakları</a><span>Suistimal inceleme</span></li>
 </ul>
 </div>
-<aside class="acad">
+<aside class="acad has-bgv"><div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>akademik"></div>
 <div class="kick">Akademik</div>
 <h3>Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</h3>
 <p>Doktora tezi, ODTÜ, 2024. Orta Anadolu'da bir kasabada tarımsal ilişkiler, sınıflar ve çiftçi stratejileri.</p>

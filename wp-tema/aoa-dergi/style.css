@@ -3,7 +3,7 @@ Theme Name: AOA Dergi
 Theme URI: https://aykutozanalan.com
 Author: Aykut Ozan Alan
 Description: aykutozanalan.com için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.0.9
+Version: 1.1.0
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -272,3 +272,15 @@ footer.ft a{color:var(--soft)}
 .legal p + p{margin-top:.8em}
 .legal ul{padding-left:1.2rem;margin:.4em 0}
 .legal li{margin:.35em 0}
+
+/* arka plan videoları: yalnızca dosyalar bandı ve akademik kutu; gri, soluk, metnin arkasında */
+.has-bgv{position:relative;isolation:isolate;overflow:hidden}
+.has-bgv > :not(.bgv){position:relative;z-index:1}
+.bgv{position:absolute;inset:0;z-index:0;pointer-events:none;background-size:cover;background-position:center}
+.bgv video{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity 1.2s ease}
+.bgv video.on{opacity:1}
+.fileband .bgv{opacity:.22}
+.fileband .bgv::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--file-bg) 0%,rgba(14,26,43,.55) 45%,rgba(14,26,43,.15) 100%)}
+.acad .bgv{opacity:.10;mix-blend-mode:multiply}
+@media (prefers-color-scheme: dark){.acad .bgv{opacity:.16;mix-blend-mode:screen}}
+@media (max-width:760px){.fileband .bgv::after{background:rgba(14,26,43,.6)}}

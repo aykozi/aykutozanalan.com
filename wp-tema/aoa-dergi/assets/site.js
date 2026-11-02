@@ -30,4 +30,31 @@
 		var d = document.querySelector(location.hash);
 		if (d && d.tagName === 'DETAILS') { d.open = true; d.scrollIntoView(); }
 	}
+	(function () {
+		var boxes = document.querySelectorAll('[data-bgv]');
+		if (!boxes.length) { return; }
+		var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+		var save = navigator.connection && navigator.connection.saveData;
+		boxes.forEach(function (box) {
+			var base = box.getAttribute('data-bgv');
+			box.style.backgroundImage = 'url("' + base + '.jpg")';
+			if (still || save || !('IntersectionObserver' in window)) { return; }
+			var v;
+			new IntersectionObserver(function (es) {
+				es.forEach(function (e) {
+					if (e.isIntersecting) {
+						if (!v) {
+							v = document.createElement('video');
+							v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'auto';
+							v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+							['webm', 'mp4'].forEach(function (x) { var s = document.createElement('source'); s.src = base + '.' + x; s.type = 'video/' + x; v.appendChild(s); });
+							v.addEventListener('playing', function () { v.classList.add('on'); });
+							box.appendChild(v);
+						}
+						var p = v.play(); if (p && p.catch) { p.catch(function () {}); }
+					} else if (v) { v.pause(); }
+				});
+			}, { rootMargin: '120px' }).observe(box);
+		});
+	})();
 })();
