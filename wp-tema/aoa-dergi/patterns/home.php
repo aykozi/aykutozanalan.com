@@ -96,7 +96,7 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 </section>
 
 </div>
-<section class="libband has-bgv" id="kutuphane" aria-labelledby="kutuphane-baslik"><div class="w">
+<section class="libband has-bgv" id="kutuphane" aria-labelledby="kutuphane-baslik"><div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>kutuphane"></div><div class="w">
 <div>
 <div class="fno">KÜTÜPHANE</div>
 <h2 id="kutuphane-baslik">Temel kaynaklar</h2>
