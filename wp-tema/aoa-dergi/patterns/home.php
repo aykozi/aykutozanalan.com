@@ -9,7 +9,12 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 ?>
 <!-- wp:group {"className":"w","layout":{"type":"default"}} -->
 <div class="wp-block-group w"><!-- wp:group {"tagName":"section","className":"lead","layout":{"type":"default"}} -->
-<section class="wp-block-group lead"><!-- wp:query {"queryId":1,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false,"sticky":""},"className":"lead-main"} -->
+<section class="wp-block-group lead"><!-- wp:group {"className":"lead-box has-bgv","layout":{"type":"default"}} -->
+<div class="wp-block-group lead-box has-bgv"><!-- wp:html -->
+<div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>yazi"></div>
+<!-- /wp:html -->
+
+<!-- wp:query {"queryId":1,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false,"sticky":""},"className":"lead-main"} -->
 <div class="wp-block-query lead-main"><!-- wp:post-template -->
 <!-- wp:post-terms {"term":"category","className":"kick"} /-->
 <!-- wp:post-title {"level":1,"isLink":true} /-->
@@ -25,7 +30,8 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 <div class="by">Aykut Ozan Alan</div>
 <!-- /wp:html -->
 <!-- /wp:query-no-results --></div>
-<!-- /wp:query -->
+<!-- /wp:query --></div>
+<!-- /wp:group -->
 
 <!-- wp:html -->
 <div class="stack">
@@ -89,9 +95,13 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 <p class="src-note">Kaynak: ACFE, <a href="https://www.acfe.com/about-the-acfe/newsroom-for-media/press-releases/press-release-detail?s=occupational-fraud-2026-a-report-to-the-nations-pr" target="_blank" rel="noopener">Occupational Fraud 2026: A Report to the Nations</a> (Mayıs 2026)</p>
 </section>
 
-<section class="sec duo" id="kutuphane">
+</div>
+<section class="libband has-bgv" id="kutuphane" aria-labelledby="kutuphane-baslik"><div class="w">
 <div>
-<div class="sec-head"><h2>Kütüphane</h2></div>
+<div class="fno">KÜTÜPHANE</div>
+<h2 id="kutuphane-baslik">Temel kaynaklar</h2>
+<p>Denetim, suistimal incelemesi ve uyum çalışmalarında başvurduğum standartlar, çerçeveler ve mevzuat.</p>
+</div>
 <ul class="lib">
 <li><a href="https://www.theiia.org/en/standards/" target="_blank" rel="noopener">Küresel İç Denetim Standartları</a><span>The IIA · standartlar</span></li>
 <li><a href="https://www.coso.org/" target="_blank" rel="noopener">COSO İç Kontrol Çerçevesi</a><span>COSO · çerçeve</span></li>
@@ -100,7 +110,9 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 <li><a href="https://www.kgk.gov.tr/" target="_blank" rel="noopener">KGK denetim standartları</a><span>Türkiye · denetim</span></li>
 <li><a href="https://www.acfe.com/" target="_blank" rel="noopener">ACFE kaynakları</a><span>Suistimal inceleme</span></li>
 </ul>
-</div>
+</div></section>
+<div class="w">
+<section class="sec acad-sec">
 <aside class="acad has-bgv"><div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>akademik"></div>
 <div class="kick">Akademik</div>
 <h3>Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</h3>

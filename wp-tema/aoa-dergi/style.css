@@ -3,7 +3,7 @@ Theme Name: AOA Dergi
 Theme URI: https://aykutozanalan.com
 Author: Aykut Ozan Alan
 Description: aykutozanalan.com için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.1.0
+Version: 1.2.0
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -284,3 +284,25 @@ footer.ft a{color:var(--soft)}
 .acad .bgv{opacity:.10;mix-blend-mode:multiply}
 @media (prefers-color-scheme: dark){.acad .bgv{opacity:.16;mix-blend-mode:screen}}
 @media (max-width:760px){.fileband .bgv::after{background:rgba(14,26,43,.6)}}
+
+/* öne çıkan yazı kutusu */
+.lead-box{border-radius:6px;padding:24px;margin:-24px 0 0 -24px}
+@media (max-width:1240px){.lead-box{margin:-24px 0 0}}
+.lead-box .bgv{opacity:.09;mix-blend-mode:multiply;border-radius:6px}
+.lead-box .bgv::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--paper) 0%,rgba(251,250,247,.6) 50%,rgba(251,250,247,0) 100%)}
+@media (prefers-color-scheme: dark){.lead-box .bgv{opacity:.14;mix-blend-mode:screen}.lead-box .bgv::after{background:linear-gradient(100deg,var(--paper) 0%,rgba(18,22,20,.6) 50%,rgba(18,22,20,0) 100%)}}
+@media (max-width:760px){.lead-box{margin:0 -12px;padding:20px 12px}}
+/* kütüphane şeridi */
+.libband{background:var(--green);color:var(--on-green)}
+.libband .w{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:48px;padding-block:48px}
+.libband .fno{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--amber-hi)}
+.libband h2{font-size:32px;line-height:1.15;margin:.6rem 0 .9rem;font-weight:600;color:var(--on-green)}
+.libband p{color:rgba(231,239,234,.75);max-width:46ch}
+.libband .lib li{border-top-color:rgba(231,239,234,.16)}
+.libband .lib a{color:var(--on-green)}
+.libband .lib span{color:rgba(231,239,234,.65)}
+.libband .lib a:focus-visible{outline-color:var(--amber-hi)}
+.libband .bgv{opacity:.2}
+.libband .bgv::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--green) 0%,rgba(20,50,43,.6) 45%,rgba(20,50,43,.2) 100%)}
+@media (max-width:760px){.libband .w{grid-template-columns:minmax(0,1fr);gap:28px}.libband .lib{grid-template-columns:minmax(0,1fr)}.libband .bgv::after{background:rgba(20,50,43,.62)}}
+.acad-sec .acad{max-width:760px}
