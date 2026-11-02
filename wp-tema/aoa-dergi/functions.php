@@ -11,6 +11,7 @@ add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style( 'aoa-fonts', 'https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap', array(), null );
 	wp_enqueue_style( 'aoa-dergi', get_stylesheet_uri(), array( 'aoa-fonts' ), $ver );
 	wp_enqueue_script( 'aoa-dergi', get_theme_file_uri( 'assets/site.js' ), array(), $ver, true );
+	wp_add_inline_script( 'aoa-dergi', 'window.AOA_VIDEO=' . wp_json_encode( get_theme_file_uri( 'assets/video/' ) ) . ';', 'before' );
 } );
 
 add_action( 'after_setup_theme', function () {

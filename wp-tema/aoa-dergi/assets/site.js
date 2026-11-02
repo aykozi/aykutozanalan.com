@@ -33,8 +33,7 @@
 	(function () {
 		// dosya yazıları: videoyu adresteki dosya numarasından seç (yoksa genel dosyalar videosu)
 		var DOSYA_VIDEOLARI = ['01', '02', '03', '04', '05', '06'];
-		var me = document.querySelector('script[src*="/assets/site.js"]');
-		var vdir = me ? me.src.split('/assets/site.js')[0] + '/assets/video/' : '';
+		var vdir = window.AOA_VIDEO || (location.origin + '/wp-content/themes/aoa-dergi/assets/video/');
 		document.querySelectorAll('[data-bgv-dosya]').forEach(function (b) {
 			var m = location.pathname.match(/\/dosya-(\d{2})-/);
 			b.setAttribute('data-bgv', vdir + (m && DOSYA_VIDEOLARI.indexOf(m[1]) > -1 ? 'dosya-' + m[1] : 'dosyalar'));
