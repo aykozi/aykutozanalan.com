@@ -44,6 +44,7 @@ $pdf_yl  = 'https://aykutozanalan.com/wp-content/uploads/2026/11/Alan-2012-Yukse
 <a class="dl" href="<?php echo $pdf_dr; ?>" download>PDF indir <small>10,8 MB</small></a>
 <a href="<?php echo $pdf_dr; ?>" target="_blank" rel="noopener">Tarayıcıda aç</a>
 <a href="https://open.metu.edu.tr/handle/11511/111315" target="_blank" rel="noopener">OpenMETU kaydı</a>
+<a href="https://tez.yok.gov.tr/UlusalTezMerkezi/" target="_blank" rel="noopener" title="Ulusal Tez Merkezi'nde tez numarasıyla aratın">YÖK Tez Merkezi · Tez No 896505</a>
 <button type="button" data-cite-toggle="cite-dr" aria-controls="cite-dr" aria-expanded="false">Atıf bilgisi</button>
 </div>
 <div class="cite" id="cite-dr" hidden><span id="cite-dr-t">Alan, A. O. (2024). <i>Local agricultural relations and farmer strategies: The case of Çiğdemli</i> [Doctoral dissertation, Middle East Technical University]. OpenMETU. https://open.metu.edu.tr/handle/11511/111315</span> <button type="button" class="copy" data-copy="cite-dr-t">Kopyala</button></div>
