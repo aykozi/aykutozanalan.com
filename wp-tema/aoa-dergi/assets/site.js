@@ -46,9 +46,14 @@
 			var base = box.getAttribute('data-bgv');
 			box.style.backgroundImage = 'url("' + base + '.jpg")';
 			if (still || save || !('IntersectionObserver' in window)) { return; }
-			var v;
+			var v, gorunur = false;
+			document.addEventListener('visibilitychange', function () {
+				if (!v) { return; }
+				if (document.hidden) { v.pause(); } else if (gorunur) { var q = v.play(); if (q && q.catch) { q.catch(function () {}); } }
+			});
 			new IntersectionObserver(function (es) {
 				es.forEach(function (e) {
+					gorunur = e.isIntersecting;
 					if (e.isIntersecting) {
 						if (!v) {
 							v = document.createElement('video');
