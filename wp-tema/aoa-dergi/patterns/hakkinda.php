@@ -46,28 +46,18 @@ $portre = esc_url( get_theme_file_uri( 'assets/portre-silik.webp' ) );
 <article class="pub">
 <span class="y">2024 · Doktora</span>
 <div>
-<h3>Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</h3>
-<p class="inst">Orta Doğu Teknik Üniversitesi, Sosyal Bilimler Enstitüsü, Siyaset Bilimi ve Kamu Yönetimi · Danışman: Prof. Dr. H. Tarık Şengül</p>
-<p class="abs">Tez, yaşlanan bir Orta Anadolu kasabası olan Çiğdemli'de tarımsal üretimdeki toplumsal sınıfları, ekonomik ve ekonomi dışı bağları ve güç ilişkilerini inceliyor. Bourdieu'nun tarımsal alan, habitus ve sermaye kavramlarından yararlanarak, çiftçi ailelerin tarımda kalma ya da tarımı bırakma kararlarını, alana yeni girenlerin rolünü, enformel ağları ve kuşaklar boyunca etkili olan siyasi ve ekonomi dışı etkenleri ele alıyor.</p>
-<div class="chips"><span>Tarımsal alan</span><span>Bourdieu</span><span>Habitus ve sermaye</span><span>Kırsal dönüşüm</span><span>Orta Anadolu</span></div>
-<div class="acts"><a href="https://open.metu.edu.tr/handle/11511/111315" target="_blank" rel="noopener">Tam metin (OpenMETU)</a><button type="button" data-cite-toggle="cite-phd" aria-controls="cite-phd" aria-expanded="false">Atıf bilgisi</button></div>
-<div class="cite" id="cite-phd" hidden><span id="cite-phd-t">Alan, A. O. (2024). <i>Local agricultural relations and farmer strategies: The case of Çiğdemli</i> [Doctoral dissertation, Middle East Technical University]. OpenMETU. https://open.metu.edu.tr/handle/11511/111315</span> <button type="button" class="copy" data-copy="cite-phd-t">Kopyala</button></div>
+<h3><a href="/akademik/#doktora">Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</a></h3>
+<p class="inst">Orta Doğu Teknik Üniversitesi, Siyaset Bilimi ve Kamu Yönetimi · Tez yöneticisi: Doç. Dr. Münis Seven Ağır</p>
 </div>
 </article>
 <article class="pub">
 <span class="y">2012 · Yüksek lisans</span>
 <div>
-<h3>Mitos – Tarih İlişkisi: Siyasal Bir İnceleme</h3>
-<p class="inst">Ankara Üniversitesi · Yayımlanmamış yüksek lisans tezi</p>
-<div class="chips"><span>Mitos</span><span>Tarih</span><span>Siyaset kuramı</span></div>
-<div class="acts"><button type="button" data-cite-toggle="cite-yl" aria-controls="cite-yl" aria-expanded="false">Atıf bilgisi</button></div>
-<div class="cite" id="cite-yl" hidden><span id="cite-yl-t">Alan, A. O. (2012). <i>Mitos – tarih ilişkisi: Siyasal bir inceleme</i> [Yayımlanmamış yüksek lisans tezi]. Ankara Üniversitesi.</span> <button type="button" class="copy" data-copy="cite-yl-t">Kopyala</button></div>
+<h3><a href="/akademik/#yuksek-lisans">Mitos – Tarih İlişkisi: Siyasal Bir İnceleme</a></h3>
+<p class="inst">Ankara Üniversitesi, Kamu Yönetimi ve Siyaset (Siyaset Bilimi) · Danışman: Prof. Dr. Zeliha Etöz</p>
 </div>
 </article>
-<article class="pub pending">
-<span class="y">Makaleler</span>
-<div><h3>Makale ve bildiriler</h3><p class="inst">Dergi makaleleri, bildiriler ve kitap bölümleri bu listede yer alacak.</p></div>
-</article>
+<p class="pub-more"><a href="/akademik/">Özetler, tam metinler ve atıf bilgisi: Akademik sayfası &rarr;</a></p>
 </section>
 
 <div class="contact" id="iletisim">

@@ -37,7 +37,7 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 <div class="stack">
 <article><div class="kick">Dosya 01</div><h3><a href="/dosyalar/#dosya-01">E-fatura ve e-defter verisinde suistimal izleri</a></h3><div class="meta">İzler ve kontroller</div></article>
 <article><div class="kick">Dosya 02</div><h3><a href="/dosyalar/#dosya-02">Satın almada çıkar çatışması ve tedarikçi suistimali</a></h3><div class="meta">İzler ve kontroller</div></article>
-<article><div class="kick">Akademik</div><h3><a href="/hakkinda/#akademik">Tezler ve akademik çalışmalar</a></h3><div class="meta">Doktora ve yüksek lisans</div></article>
+<article><div class="kick">Akademik</div><h3><a href="/akademik/">Tezler ve akademik çalışmalar</a></h3><div class="meta">Doktora ve yüksek lisans</div></article>
 </div>
 <!-- /wp:html --></section>
 <!-- /wp:group -->
@@ -117,7 +117,7 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 <div class="kick">Akademik</div>
 <h3>Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</h3>
 <p>Doktora tezi, ODTÜ, 2024. Orta Anadolu'da bir kasabada tarımsal ilişkiler, sınıflar ve çiftçi stratejileri.</p>
-<div class="links"><a href="/hakkinda/#akademik">Tüm akademik çalışmalar</a><a href="https://open.metu.edu.tr/handle/11511/111315" target="_blank" rel="noopener">OpenMETU</a></div>
+<div class="links"><a href="/akademik/">Tezler, özetler ve PDF</a><a href="https://open.metu.edu.tr/handle/11511/111315" target="_blank" rel="noopener">OpenMETU</a></div>
 </aside>
 </section>
 </div>

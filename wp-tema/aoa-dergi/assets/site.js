@@ -12,6 +12,15 @@
 			btn.setAttribute('aria-expanded', String(!box.hidden));
 		});
 	});
+	document.querySelectorAll('[data-clamp]').forEach(function (btn) {
+		var box = document.getElementById(btn.getAttribute('data-clamp'));
+		if (!box) { return; }
+		btn.addEventListener('click', function () {
+			var open = box.classList.toggle('open');
+			btn.setAttribute('aria-expanded', String(open));
+			btn.textContent = open ? 'Özeti kısalt' : 'Özetin tamamı';
+		});
+	});
 	document.querySelectorAll('[data-copy]').forEach(function (btn) {
 		btn.addEventListener('click', function () {
 			var el = document.getElementById(btn.getAttribute('data-copy'));
