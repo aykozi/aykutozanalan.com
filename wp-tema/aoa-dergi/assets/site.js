@@ -83,6 +83,7 @@
 			set.appendChild(el);
 		});
 		if (!set.querySelector('a')) { return; }
+		set.querySelectorAll('a').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener'; });
 		track.appendChild(set); view.appendChild(track); w.appendChild(view);
 		if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) { w.classList.add('tk-still'); return; }
 		var copy = set.cloneNode(true);
