@@ -2,7 +2,7 @@
 # kullanım: hazirla.sh girdi.mp4 cikti_adi genislik [baslangic_sn] [sure_sn]
 set -e
 IN="$1"; NAME="$2"; W="$3"; SS="${4:-0}"; D="${5:-12}"; X=1.5
-OUT=/tmp/aoa/wp-tema/aoa-dergi/assets/video; mkdir -p "$OUT"
+OUT=/tmp/aoa/wp-tema/denetim-izi/assets/video; mkdir -p "$OUT"
 F="scale=${W}:-2,fps=24,format=gray,boxblur=1:1,eq=contrast=0.9,format=yuv420p"
 # sonu başına yumuşakça bindirerek kesintisiz döngü
 FC="[0:v]trim=start=${SS}:duration=${D},setpts=PTS-STARTPTS,${F},split[a][b];[a]trim=start=${X},setpts=PTS-STARTPTS[main];[b]trim=duration=${X},setpts=PTS-STARTPTS[head];[main][head]xfade=transition=fade:duration=${X}:offset=$(echo "$D-2*$X" | bc)[v]"

@@ -1,6 +1,6 @@
 <?php
 /**
- * AOA Dergi theme functions.
+ * Denetim İzi theme functions.
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
