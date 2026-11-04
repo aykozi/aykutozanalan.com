@@ -43,3 +43,22 @@ add_filter( 'single_template_hierarchy', function ( $templates ) {
 	}
 	return $templates;
 } );
+
+/*
+ * Denetim İzi simgeleri temadan gelir. 16 piksellik sürümde nokta
+ * okunmadığı için yalnız tik kullanılır.
+ */
+add_filter( 'site_icon_meta_tags', function () {
+	$u = function ( $f ) {
+		return esc_url( get_theme_file_uri( 'assets/' . $f ) );
+	};
+	return array(
+		'<link rel="icon" href="' . $u( 'icon-32.png' ) . '" sizes="32x32" />',
+		'<link rel="icon" href="' . $u( 'icon-16.png' ) . '" sizes="16x16" />',
+		'<link rel="apple-touch-icon" href="' . $u( 'icon-180.png' ) . '" />',
+		'<meta name="msapplication-TileImage" content="' . $u( 'icon-512.png' ) . '" />',
+	);
+} );
+add_filter( 'get_site_icon_url', function ( $url, $size ) {
+	return esc_url( get_theme_file_uri( 'assets/' . ( $size > 180 ? 'icon-512.png' : ( $size > 32 ? 'icon-180.png' : 'icon-32.png' ) ) ) );
+}, 10, 2 );
