@@ -8,8 +8,8 @@
 $aoa_v   = esc_url( get_theme_file_uri( 'assets/video/' ) );
 $aoa_tez = esc_url( get_theme_file_uri( 'assets/tez/' ) );
 // PDF'ler ortam kütüphanesinde.
-$pdf_dr  = 'https://aykutozanalan.com/wp-content/uploads/2026/11/Alan-2024-Doktora-Tezi-Local-Agricultural-Relations-Cigdemli.pdf';
-$pdf_yl  = 'https://aykutozanalan.com/wp-content/uploads/2026/11/Alan-2012-Yuksek-Lisans-Tezi-Mitos-Tarih-Iliskisi.pdf';
+$pdf_dr  = 'https://denetimizi.com/wp-content/uploads/2026/11/Alan-2024-Doktora-Tezi-Local-Agricultural-Relations-Cigdemli.pdf';
+$pdf_yl  = 'https://denetimizi.com/wp-content/uploads/2026/11/Alan-2012-Yuksek-Lisans-Tezi-Mitos-Tarih-Iliskisi.pdf';
 ?>
 <!-- wp:html -->
 <section class="akhero has-bgv" aria-labelledby="ak-baslik"><div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>akademik"></div><div class="w">
@@ -74,7 +74,7 @@ $pdf_yl  = 'https://aykutozanalan.com/wp-content/uploads/2026/11/Alan-2012-Yukse
 <a href="<?php echo $pdf_yl; ?>" target="_blank" rel="noopener">Tarayıcıda aç</a>
 <button type="button" data-cite-toggle="cite-yl" aria-controls="cite-yl" aria-expanded="false">Atıf bilgisi</button>
 </div>
-<div class="cite" id="cite-yl" hidden><span id="cite-yl-t">Alan, A. O. (2012). <i>Mitos – tarih ilişkisi: Siyasal bir inceleme</i> [Yüksek lisans tezi, Ankara Üniversitesi]. https://aykutozanalan.com/akademik/</span> <button type="button" class="copy" data-copy="cite-yl-t">Kopyala</button></div>
+<div class="cite" id="cite-yl" hidden><span id="cite-yl-t">Alan, A. O. (2012). <i>Mitos – tarih ilişkisi: Siyasal bir inceleme</i> [Yüksek lisans tezi, Ankara Üniversitesi]. https://denetimizi.com/akademik/</span> <button type="button" class="copy" data-copy="cite-yl-t">Kopyala</button></div>
 </div>
 </article>
 

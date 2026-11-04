@@ -16,7 +16,7 @@ $portre = esc_url( get_theme_file_uri( 'assets/portre-silik.webp' ) );
 <p class="role">Siyaset bilimi ve kamu yönetimi doktoru · Sertifikalı İç Denetçi (CIA)</p>
 <div class="bio">
 <p>On beş yıldır denetim, suistimal incelemesi ve uyum alanında çalışıyorum. Kariyerime Toprak Mahsulleri Ofisi'nde müfettiş yardımcısı olarak başladım; 35 bölge müdürlüğü ve 190 birimden oluşan bir kamu kuruluşunda mali, operasyonel ve uyum denetimleri yürüttüm, başmüfettiş olarak denetim ekiplerini yönettim.</p>
-<p>2023'ten bu yana özel sektörde iç denetim müdürü olarak çalışıyorum. Akademik ilgim, kamu yönetimi ve tarım politikalarının sahadaki karşılığı üzerine. Bu sitede denetim, yönetişim ve suistimal önleme üzerine yazıyorum.</p>
+<p>2023'ten bu yana özel sektörde iç denetim müdürü olarak çalışıyorum. Akademik ilgim, kamu yönetimi ve tarım politikalarının sahadaki karşılığı üzerine. Denetim İzi'nde denetim, yönetişim ve suistimal önleme üzerine yazıyorum.</p>
 </div>
 <div class="jump"><a href="#akademik">Akademik çalışmalar</a><a href="#kariyer">Kariyer</a><a href="#iletisim">İletişim</a></div>
 </div>

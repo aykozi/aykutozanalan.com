@@ -13,7 +13,7 @@
 <p class="lede">6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi kapsamında aydınlatma metni. Son güncelleme: Kasım 2026.</p>
 
 <h2>Veri sorumlusu</h2>
-<p>Bu sitenin sahibi ve veri sorumlusu Aykut Ozan Alan'dır. İletişim: <a href="mailto:a.ozanalan@gmail.com">a.ozanalan@gmail.com</a>.</p>
+<p>Denetim İzi (denetimizi.com) sitesinin sahibi ve veri sorumlusu Aykut Ozan Alan'dır. İletişim: <a href="mailto:a.ozanalan@gmail.com">a.ozanalan@gmail.com</a>.</p>
 
 <h2>Hangi verileri, nasıl topluyorum?</h2>
 <ul>
