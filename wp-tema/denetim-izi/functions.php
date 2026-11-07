@@ -108,7 +108,7 @@ function denetim_izi_akademisyen( $term ) {
 		'kurum'    => get_term_meta( $term->term_id, 'ak_kurum', true ),
 		'alan'     => get_term_meta( $term->term_id, 'ak_alan', true ),
 		'baglanti' => get_term_meta( $term->term_id, 'ak_baglanti', true ),
-		'foto'     => $foto_id ? wp_get_attachment_image_url( $foto_id, 'medium' ) : '',
+		'foto'     => $foto_id ? wp_get_attachment_url( $foto_id ) : '',
 		'bio'      => term_description( $term ),
 		'link'     => get_term_link( $term ),
 		'sayi'     => (int) $term->count,

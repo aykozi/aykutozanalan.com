@@ -3,7 +3,7 @@ Theme Name: Denetim İzi
 Theme URI: https://denetimizi.com
 Author: Aykut Ozan Alan
 Description: Denetim İzi (denetimizi.com) için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.9.0
+Version: 1.9.1
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -461,3 +461,11 @@ footer.ft .ft-imza{color:var(--ink)}
   .ak-tam,.ak-profil .ak-kart{flex-direction:column}
   .ak-profil .ak-foto{width:120px;height:150px}
 }
+.ak-yazi-ust .by,.ak-yazi-ust .by a,.ak-yazi-ust .wp-block-post-date{color:var(--on-green);opacity:1}
+.ak-yazi-ust .by a{text-decoration-color:rgba(231,239,234,.45)}
+.ak-kunye .acts{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.ak-kunye .acts .dl{background:var(--green);color:var(--on-green);text-decoration:none;padding:8px 14px;border-radius:4px;font-weight:500}
+.ak-kunye button{font:inherit;font-size:14px;background:none;border:1px solid var(--rule);border-radius:4px;padding:6px 10px;color:var(--ink);cursor:pointer}
+.ak-kunye .cite{background:var(--paper)}
+.ak-tam .ak-metin > :first-child{margin-top:0}
+.ak-tam .ak-metin{min-width:0}
