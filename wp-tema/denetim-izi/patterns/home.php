@@ -148,9 +148,7 @@ if ( $ak_son ) :
 <!-- /wp:html -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:shortcode -->
-[mailpoet_form id="1"]
-<!-- /wp:shortcode -->
+<div class="wp-block-group"><!-- wp:mailpoet/subscription-form-block {"formId":1} /-->
 
 <!-- wp:html -->
 <p class="kvkk">E-posta adresiniz yalnızca yeni yazıların gönderimi için kullanılır; dilediğiniz an abonelikten çıkabilirsiniz. Ayrıntılar: <a href="/gizlilik/">Gizlilik ve kişisel veriler</a>.</p>
