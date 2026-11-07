@@ -5,7 +5,7 @@
  * Categories: aoa
  * Inserter: no
  */
-$portre = esc_url( get_theme_file_uri( 'assets/portre.webp' ) );
+$portre = esc_url( get_theme_file_uri( 'assets/portre.webp' ) . '?v=' . wp_get_theme()->get( 'Version' ) );
 ?>
 <!-- wp:html -->
 <div class="w">
