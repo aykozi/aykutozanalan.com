@@ -46,14 +46,14 @@ $portre = esc_url( get_theme_file_uri( 'assets/portre-silik.webp' ) );
 <article class="pub">
 <span class="y">2024 · Doktora</span>
 <div>
-<h3><a href="/akademik/#doktora">Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</a></h3>
+<h3><a href="/doktora-tezi-local-agricultural-relations-cigdemli/">Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</a></h3>
 <p class="inst">Orta Doğu Teknik Üniversitesi, Siyaset Bilimi ve Kamu Yönetimi · Tez yöneticisi: Doç. Dr. Münis Seven Ağır</p>
 </div>
 </article>
 <article class="pub">
 <span class="y">2012 · Yüksek lisans</span>
 <div>
-<h3><a href="/akademik/#yuksek-lisans">Mitos – Tarih İlişkisi: Siyasal Bir İnceleme</a></h3>
+<h3><a href="/yuksek-lisans-tezi-mitos-tarih-iliskisi/">Mitos – Tarih İlişkisi: Siyasal Bir İnceleme</a></h3>
 <p class="inst">Ankara Üniversitesi, Kamu Yönetimi ve Siyaset (Siyaset Bilimi) · Danışman: Prof. Dr. Zeliha Etöz</p>
 </div>
 </article>
