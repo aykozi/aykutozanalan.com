@@ -14,7 +14,7 @@
 <p class="role">Siyaset bilimi ve kamu yönetimi doktoru · Sertifikalı İç Denetçi (CIA)</p>
 <div class="bio">
 <p>Denetim, suistimal incelemesi ve uyum alanında çalışıyorum. Mesleğe 2011'de Toprak Mahsulleri Ofisi'nde müfettiş yardımcısı olarak başladım ve on iki yıl boyunca teftiş, inceleme ve soruşturma yaptım. 2023'ten bu yana özel sektörde iç denetim müdürü olarak çalışıyorum.</p>
-<p>Akademik ilgim, kamu yönetimi ve tarım politikalarının sahadaki karşılığı üzerine. Denetim İzi'nin iç denetim, uyum ve suistimal alanında çalışan profesyonellerin hem katkı sunabileceği hem de fayda sağlayabileceği bir platform olması için çalışıyorum.</p>
+<p>Akademik ilgim, kamu yönetimi ve tarım politikalarının sahadaki karşılığı üzerine. Denetim İzi'nin iç denetim, uyum ve suistimal alanında çalışan profesyonellerin hem katkı sunabileceği hem de fayda sağlayabileceği bir platform olmasını amaçlıyorum.</p>
 </div>
 <div class="jump"><a href="#akademik">Akademik çalışmalar</a><a href="#kariyer">Kariyer</a><a href="#iletisim">İletişim</a></div>
 </div>
