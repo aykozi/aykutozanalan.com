@@ -9,6 +9,7 @@ S = dict(
  D04='dosya-04-bordro-suistimali-hayalet-calisan',
  D05='dosya-05-kamu-ihalelerinde-usulsuzluk-gostergeleri',
  D06='dosya-06-kara-para-aklama-tipolojileri',
+ A4='iia-ucuncu-taraf-konu-gereksinimi',
 )
 
 add('A1', S['A1'], 'Uyum görevlisi artık bir meslek: MASAK lisans rejimi ne getiriyor?', 'Uyum ve AML',
@@ -587,3 +588,69 @@ Bu göstergelerin çoğu, meşru ticari açıklaması olabilecek durumlardır. �
 
 _{DOSDISC} Hukuki görüş niteliği taşımaz._
 """, '2026-10-31T09:01:00')
+
+
+add('A4', S['A4'], "Tedarikçiyi denetlemek artık bir tercih değil: IIA'nın üçüncü taraf gereksinimi ne getiriyor?", 'İç denetim',
+ "15 Eylül 2026'da yürürlüğe giren IIA Üçüncü Taraf Konu Gereksinimi, iç denetimin tedarikçi, hizmet sağlayıcı ve aracı ilişkilerine yönelik güvence çalışmaları için ilk kez asgari bir çıta belirlemektedir.",
+f"""
+Şirketlerin karşı karşıya olduğu risklerin önemli bir bölümü artık kendi sınırlarının dışında ortaya çıkıyor. Bordro hesaplamasının hizmet sağlayıcılara devredilmesi, verilerin bulut ortamında tutulması, lojistik hizmetlerin dışarıdan temin edilmesi ve satışların aracılar üzerinden gerçekleştirilmesi gibi uygulamalar bu eğilimin giderek güçlendiğini gösteriyor. Bu ilişkilerin her biri maliyet ve uzmanlık avantajı sağlamakla birlikte, kontrolün bir bölümünün başka bir kuruluşa bırakılması anlamına da geliyor.
+
+Bu nokta önemli, zira üçüncü taraf süreçlerinde suistimal açısından tablo hiç iç açıcı değil. ACFE'nin 2026 raporunda incelenen 2.402 vakanın %45'inde yolsuzluk unsuru bulunuyor. Faillerin %29'unda tedarikçi ya da müşteriyle olağandışı yakınlık gözlemlenmiş. Bir ihbarla ortaya çıkan vakalarda ihbarların %34'ünün müşteri, tedarikçi ve rakip gibi dış kaynaklardan gelmesi de üçüncü tarafların aynı anda hem bir risk hem de bir bilgi kaynağı olduğunu gösteriyor.
+
+Uluslararası İç Denetçiler Enstitüsü (IIA), Küresel İç Denetim Standartlarını tamamlayan konu gereksinimleri (Topical Requirements) dizisinin ikincisini üçüncü taraf riskine ayırdı. 15 Eylül 2025'te yayımlanan gereksinim, bir yıllık geçiş süresinin ardından 15 Eylül 2026 itibarıyla yürürlüğe girdi. Bu yazıda gereksinimin neleri öngördüğünü, neleri öngörmediğini ve orta ölçekli şirketlerin iç denetim birimleri açısından doğurduğu pratik sonuçları değerlendireceğiz.
+
+## Konu gereksinimi kavramı
+
+Konu gereksinimleri, belirli risk alanlarında yürütülen güvence görevleri için asgari ölçütler belirleyen ve uyulması zorunlu olan belgelerdir. IIA bugüne kadar siber güvenlik (yürürlük tarihi 5 Şubat 2026), üçüncü taraf (15 Eylül 2026), örgütsel davranış (15 Aralık 2026) ve örgütsel dayanıklılık (30 Nisan 2027) konularında gereksinim yayımladı. Gereksinimler, yayımlanmasından on iki ay sonra yürürlüğe giriyor.
+
+Burada önemli bir ayrım dikkat çekiyor. Konu gereksinimi, denetim planına hangi konuların alınacağını belirlemiyor; bu karar iç denetimin risk değerlendirmesine ait olmaya devam ediyor. Gereksinim, konu bir güvence görevine dâhil edildiğinde görevin asgari olarak neleri kapsaması gerektiğini tanımlamaktadır. Uygulama Rehberi'ne göre gereksinim üç durumda uygulanır. Bunlar, konunun denetim planında açıkça yer alması, bir görev sırasında önemli bir risk olarak ortaya çıkması ve plan dışı bir taleple göreve eklenmesidir. Danışmanlık görevlerinde ise gereksinimin uygulanması zorunlu olmayıp tavsiye niteliğindedir.
+
+## Gereksinimin kapsamı
+
+IIA üçüncü tarafı, kuruluşun ürün ya da hizmet temini amacıyla iş ilişkisi kurduğu dış kişi, grup veya kuruluş olarak tanımlamaktadır. Tanım; tedarikçileri, yüklenici ve alt yüklenicileri, dış kaynak hizmet sağlayıcılarını ve danışmanları kapsamakta, alt yüklenici zincirini de içine almaktadır. Değerlendirme, ilişkinin seçim, sözleşme, işe alım (onboarding), izleme ve sonlandırma aşamalarından oluşan yaşam döngüsünün tamamını esas alır.
+
+Gereksinimler üç başlık altında toplanmaktadır.
+
+- **Yönetişim.** Bir işin dışarıdan temin edilip edilmeyeceğine ilişkin kararın biçimsel ve düzenli olarak gözden geçirilen bir yaklaşıma dayanması, yaşam döngüsünü kapsayan politika ve prosedürlerin bulunması, rol ve sorumlulukların tanımlanması ve öncelikli üçüncü taraflara ilişkin performans, risk ve mevzuat ihlallerinin zamanında raporlanması beklenmektedir.
+- **Risk yönetimi.** Standart bir risk sürecinin işletilmesi, üçüncü tarafların (alt yükleniciler dâhil) riske göre sınıflandırılması, risk düzeyiyle orantılı yanıtların belirlenmesi ve karşı tarafın sorunlara yanıt vermemesi hâlinde ilişkinin yeniden değerlendirilerek gerektiğinde sonlandırılması öngörülmektedir.
+- **Kontroller.** Seçim aşamasında durum tespiti (due diligence) ve belgelenmiş bir iş gerekçesi; hukuk ve uyum birimlerinin onayından geçmiş, yetkili kişilerce imzalanmış ve güvenli biçimde saklanan sözleşmeler; tüm üçüncü taraf ilişkilerine ait doğru, eksiksiz ve güncel bir liste; sözleşme şartlarına göre performans izleme ve bilgilerin güvenilirliğinin doğrulanması; olay yönetimi ve kök neden analizi; sözleşme bitiş ve yenileme tarihlerinin izlenmesi ile veri iadesi veya imhası ve erişimlerin kapatılmasını içeren biçimsel bir çıkış planı aranmaktadır.
+
+## Gereksinimin getirdiği değişiklik
+
+Bu başlıkların hiçbiri iç denetçiler için yeni değildir. Değişen husus, asgari çıtanın artık iç denetim biriminin takdirine bırakılmamasıdır. Üçüncü taraf konusu bir güvence görevine dâhil edildiğinde her bir gereksinimin uygulanabilirliği değerlendirilmeli, bu değerlendirme belgelenerek saklanmalı ve kapsam dışı bırakılan gereksinimlerin gerekçesi yazılı olarak ortaya konmalıdır. Uyum durumu, dış kalite değerlendirmelerinde ayrıca incelenecektir.
+
+Bunun pratikteki karşılığı açıktır. Sözleşmelerin incelenmesiyle sınırlı, dar kapsamlı bir tedarikçi denetimi tek başına yeterli görülmeyecektir. Sözleşme yenileme tarihlerinin izlenmemesi, ilişki sona erdiğinde tedarikçinin sistem erişimlerinin kapatılmaması ya da şirketin hangi tedarikçiyle hangi verileri paylaştığını eksiksiz biçimde ortaya koyamaması hâlinde, bu durumların raporda yer alması gerekecektir. Bu hususların raporda yer almaması durumunda ise kapsam dışı bırakılma gerekçelerinin belgelenmesi beklenecektir.
+
+## Orta ölçekli şirketler için pratik sonuçlar
+
+Büyük şirketlerde tedarikçi risk yönetimi için çoğunlukla ayrı bir birim ve özel yazılımlar bulunmaktadır. Orta ölçekli şirketlerde ise bu iş genellikle satın alma, muhasebe ve bilgi teknolojileri birimleri arasında dağınık biçimde yürütülmektedir. Gereksinim bu yapının değiştirilmesini zorunlu kılmamaktadır. Bununla birlikte iç denetimden, dağınık sorumlulukların bir bütün olarak etkin bir yaşam döngüsü yönetimi oluşturup oluşturmadığını sorgulaması beklenmektedir. Başlangıç için dört adım önermekteyiz.
+
+1. **Envanter.** Muhasebe kayıtlarından ödeme yapılan tüm karşı taraflar çıkarılarak sözleşme listesiyle karşılaştırılmalıdır. Gereksinimin "doğru, eksiksiz ve güncel liste" ölçütü, uygulamada ilk olarak bu noktada aksayabilmektedir.
+2. **Sınıflandırma.** Üçüncü taraflar harcama tutarına göre değil; veriye, sistemlere ve nakde erişim, müşteriyle temas ve ikame güçlüğü gibi ölçütlere göre risk sınıflarına ayrılmalıdır.
+3. **Eşleme.** Denetim planındaki görevler, bir uygulanabilirlik matrisi üzerinde gereksinimin yönetişim, risk yönetimi ve kontrol başlıklarıyla eşleştirilmelidir. Uygulama Rehberi bu tür bir matrisin kullanılmasını önermektedir.
+4. **Paylaşım.** Kapsam dışı bırakma kararları denetim komitesiyle paylaşılmalıdır. Kapsam kararları kalite değerlendirmesinde bulguya dönüşebileceğinden, bu kararların yönetişim düzeyinde görünür olması önem taşımaktadır.
+
+Düzenlemeye tabi sektörlerde mevzuat, gereksinimden daha ayrıntılı yükümlülükler öngörebilmektedir. Bankacılık sektöründe bu alan, Bankacılık Düzenleme ve Denetleme Kurumu (BDDK) tarafından çıkarılan ve 5 Kasım 2011 tarihli ve 28106 sayılı Resmî Gazete'de yayımlanan Bankaların Destek Hizmeti Almalarına İlişkin Yönetmelik ile düzenlenmektedir. Yönetmelik, destek hizmeti alınmadan önce yazılı bir risk analizi raporu ile hizmet sağlayıcının teknik yeterliliğine ilişkin bir rapor hazırlanmasını, sözleşmenin bu raporlar ve denetim komitesinin görüşü dikkate alınarak imzalanmasını ve denetim komitesinin hizmet sağlayıcılara ilişkin değerlendirmesini en az yılda bir kez yönetim kuruluna raporlamasını öngörmektedir (md. 5 ve md. 9). Uygulama Rehberi'ne göre bir dış çerçeve daha yüksek bir standart getirdiğinde, denetim kapsamının bu standarda göre belirlenmesi gerekmektedir.
+
+## Sınırlar ve riskler
+
+Gereksinimin iki sınırının göz önünde bulundurulması gerekiyor. Birincisi, gereksinimin bir kontrol listesine dönüşme riski bulunmasıdır. On yedi gereksinimi işaretleyerek tamamlanan bir denetim, şirketin hangi üçüncü tarafa ne ölçüde bağımlı olduğu ve bu bağımlılığın nerede kırılabileceği gibi asıl soruları gözden kaçırabilir. İkincisi, kaynak sorunudur. Küçük bir iç denetim biriminin her üçüncü taraf görevinde tüm başlıkları derinlemesine ele alması mümkün olmayabilir. Uygulama Rehberi, kapsamın birden fazla göreve ve birden fazla yıla yayılmasına imkân tanıyor. Bunun koşulu, kararın belgelenmesi ve risk değerlendirmesiyle tutarlı olmasıdır.
+
+## Değerlendirme
+
+Üçüncü taraf gereksinimi devrim niteliğinde bir yenilik getirmemekte, iyi uygulamanın asgari düzeyini yazılı hâle getirmektedir. Gereksinimin asıl değeri şeffaflık boyutunda ortaya çıkmaktadır. İç denetim, bundan sonra neyi denetlediğini olduğu kadar neyi denetlemediğini de gerekçeleriyle ortaya koymak durumundadır. Bu durum, yönetim kurulları ve denetim komiteleri açısından da bir fırsat niteliği taşımaktadır. Tedarikçi ilişkileri çoğu zaman yalnızca maliyet ve performans açısından izlenmektedir. Gereksinim ise aynı ilişkilerin veri, erişim, süreklilik ve suistimal riski açısından da düzenli olarak sorgulanmasına olanak tanıyan bir çerçeve sunmaktadır. Kanaatimizce orta ölçekli şirketlerin bu çerçeveyi bir uyum yükü olarak değil, dağınık sorumlulukları bir araya getirme fırsatı olarak değerlendirmesi daha verimli sonuçlar doğuracaktır.
+
+_Tedarikçi ilişkilerinde suistimalin kayıtlarda bıraktığı izler, sitemizdeki [Dosya 02 · Satın almada çıkar çatışması ve tedarikçi suistimali]({LINK(S['D02'])}) başlıklı yazıda ayrıntılı olarak ele alınmaktadır._
+
+## Kaynaklar
+
+- IIA, Third-Party Topical Requirement (sayfa). https://www.theiia.org/en/standards/2024-standards/topical-requirements/third-party/
+- IIA, Third-Party Topical Requirement (metin, İngilizce). https://www.theiia.org/globalassets/site/standards/topical-requirements/third-party/third_party_topical_requirement_english.pdf
+- IIA, Topical Requirements Application Guidance. https://www.theiia.org/globalassets/site/standards/topical-requirements/topical_requirements_application_guidance_english.pdf
+- IIA, Topical Requirements (genel sayfa). https://www.theiia.org/TopicalRequirements
+- ACFE, Occupational Fraud 2026. A Report to the Nations (2026). https://www.acfe.com/fraud-resources/report-to-the-nations
+- Bankaların Destek Hizmeti Almalarına İlişkin Yönetmelik, Resmî Gazete, 5 Kasım 2011, sayı 28106. https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=15481&MevzuatTur=7&MevzuatTertip=5
+- BDDK, Bankacılık Kanununa İlişkin Düzenlemeler (yönetmelik listesi). https://www.bddk.org.tr/Mevzuat/Liste/50
+
+_{DISC.format('hukuki ya da mesleki')}_
+""", '2026-11-07T19:00:00')
