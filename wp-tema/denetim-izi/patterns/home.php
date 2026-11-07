@@ -114,10 +114,24 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 <div class="w">
 <section class="sec acad-sec">
 <aside class="acad has-bgv"><div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>akademik"></div>
+<?php
+$ak_kat  = get_category_by_slug( 'akademik' );
+$ak_son  = $ak_kat ? get_posts( array( 'category' => $ak_kat->term_id, 'numberposts' => 1, 'post_status' => 'publish' ) ) : array();
+if ( $ak_son ) :
+	$p   = $ak_son[0];
+	$yz  = get_the_terms( $p, 'akademisyen' );
+	$kim = is_array( $yz ) ? implode( ', ', array_map( function ( $t ) { return trim( get_term_meta( $t->term_id, 'ak_unvan', true ) . ' ' . $t->name ); }, $yz ) ) : '';
+?>
+<div class="kick">Akademik<?php echo $kim ? ' · ' . esc_html( $kim ) : ''; ?></div>
+<h3><a href="<?php echo esc_url( get_permalink( $p ) ); ?>"><?php echo esc_html( get_the_title( $p ) ); ?></a></h3>
+<?php if ( has_excerpt( $p ) ) : ?><p><?php echo esc_html( get_the_excerpt( $p ) ); ?></p><?php endif; ?>
+<div class="links"><a href="<?php echo esc_url( get_permalink( $p ) ); ?>">Yazıyı oku</a><a href="/akademik/">Tüm akademik yazılar ve tezler</a></div>
+<?php else : ?>
 <div class="kick">Akademik</div>
 <h3>Local Agricultural Relations and Farmer Strategies: The Case of Çiğdemli</h3>
 <p>Doktora tezi, ODTÜ, 2024. Orta Anadolu'da bir kasabada tarımsal ilişkiler, sınıflar ve çiftçi stratejileri.</p>
 <div class="links"><a href="/akademik/">Tezler, özetler ve PDF</a><a href="https://open.metu.edu.tr/handle/11511/111315" target="_blank" rel="noopener">OpenMETU</a></div>
+<?php endif; ?>
 </aside>
 </section>
 </div>

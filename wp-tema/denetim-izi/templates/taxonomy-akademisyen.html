@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header","tagName":"div"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group"><!-- wp:group {"className":"w ak-yazar-sayfa","layout":{"type":"default"}} -->
+<div class="wp-block-group w ak-yazar-sayfa"><!-- wp:html -->
+<div class="fno ak-geri"><a href="/akademik/">AKADEMİK</a></div>
+<!-- /wp:html -->
+<!-- wp:term-description /-->
+
+<!-- wp:heading {"className":"ak-liste-h"} -->
+<h2 class="wp-block-heading ak-liste-h">Denetim İzi'ndeki çalışmaları</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":7,"query":{"perPage":20,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"className":"ak-liste"} -->
+<div class="wp-block-query ak-liste"><!-- wp:post-template -->
+<!-- wp:post-date {"format":"Y"} /-->
+<!-- wp:post-title {"level":3,"isLink":true} /-->
+<!-- wp:post-excerpt {"excerptLength":36} /-->
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"className":"empty"} -->
+<p class="empty">Yazarın çalışmaları yakında burada yer alacak.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"div"} /-->
