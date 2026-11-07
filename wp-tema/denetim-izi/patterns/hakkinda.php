@@ -5,7 +5,6 @@
  * Categories: aoa
  * Inserter: no
  */
-$portre = esc_url( get_theme_file_uri( 'assets/portre.webp' ) . '?v=' . wp_get_theme()->get( 'Version' ) );
 ?>
 <!-- wp:html -->
 <div class="w">
@@ -19,7 +18,6 @@ $portre = esc_url( get_theme_file_uri( 'assets/portre.webp' ) . '?v=' . wp_get_t
 </div>
 <div class="jump"><a href="#akademik">Akademik çalışmalar</a><a href="#kariyer">Kariyer</a><a href="#iletisim">İletişim</a></div>
 </div>
-<figure class="ahero-foto"><img src="<?php echo $portre; ?>" alt="Aykut Ozan Alan" width="640" height="800"></figure>
 </div>
 
 <div class="cols" id="kariyer">
