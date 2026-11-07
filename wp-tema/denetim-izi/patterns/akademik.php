@@ -15,7 +15,7 @@ $pdf_yl  = 'https://denetimizi.com/wp-content/uploads/2026/11/Alan-2012-Yuksek-L
 <section class="akhero has-bgv" aria-labelledby="ak-baslik"><div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>akademik"></div><div class="w">
 <div class="fno">AKADEMİK</div>
 <h1 id="ak-baslik">Hukuk, kamu yönetimi ve yönetişim üzerine akademik yazılar</h1>
-<p>Farklı üniversitelerden akademisyenlerin makaleleri, değerlendirmeleri ve tezleri. Her çalışmanın künyesi, atıf bilgisi ve yazarının profili kendi sayfasında.</p>
+<p>Farklı üniversitelerden akademisyenlerin makaleleri, güncel değerlendirmeleri ve tezleri.</p>
 </div></section>
 <?php
 $ak_kat     = get_category_by_slug( 'akademik' );
