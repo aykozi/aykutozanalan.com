@@ -3,7 +3,7 @@ Theme Name: Denetim İzi
 Theme URI: https://denetimizi.com
 Author: Aykut Ozan Alan
 Description: Denetim İzi (denetimizi.com) için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.10.0
+Version: 1.11.0
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -471,3 +471,17 @@ footer.ft .ft-imza{color:var(--ink)}
 .ak-tam .ak-metin{min-width:0}
 .article-ak .ak-kapak img{max-width:220px;height:auto;border:1px solid var(--rule);border-radius:4px;background:#fff}
 @media (prefers-color-scheme: dark){.article-ak .ak-kapak img{border-color:transparent}}
+
+/* ===== Bülten formu (MailPoet) ===== */
+.mailpoet_form{padding:0!important}
+.mailpoet_form form{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.mailpoet_form .mailpoet_paragraph{margin:0!important;flex:1 1 220px;min-width:0}
+.mailpoet_form .mailpoet_paragraph:has(.mailpoet_submit){flex:0 0 auto}
+.mailpoet_form input.mailpoet_text{width:100%!important;box-sizing:border-box;font:inherit!important;font-size:15px!important;padding:11px 12px!important;border:1px solid var(--rule)!important;border-radius:4px!important;background:var(--paper)!important;color:var(--ink)!important}
+.mailpoet_form input.mailpoet_submit{font:inherit!important;font-size:15px!important;font-weight:500!important;padding:11px 16px!important;border:0!important;border-radius:4px!important;background:var(--green)!important;color:var(--on-green)!important;cursor:pointer;width:auto!important}
+.mailpoet_form .mailpoet_message{flex-basis:100%;font-size:14px}
+.mailpoet_form .mailpoet_validate_success{color:var(--link)!important}
+.mailpoet_form .mailpoet_validate_error{color:#B3261E!important}
+.abone-sonu{max-width:720px;margin:0 auto 56px;padding:22px 24px;border:1px solid var(--rule);border-radius:8px;background:var(--paper-2);display:grid;gap:12px}
+.abone-sonu b{font-family:var(--serif);font-size:19px}
+.abone-sonu p{margin:.2rem 0 0;color:var(--soft);font-size:15px}

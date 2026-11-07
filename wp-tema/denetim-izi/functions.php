@@ -196,3 +196,19 @@ add_filter( 'query_loop_block_query_vars', function ( $vars, $block ) {
 	}
 	return $vars;
 }, 10, 2 );
+
+/*
+ * Bülten (MailPoet): konuk akademik yazılarda e-postadaki yazar satırı
+ * WordPress hesabı yerine sitedeki akademisyen kaydından gelir.
+ */
+add_filter( 'mailpoet_newsletter_post_author', function ( $author, $post_id = 0 ) {
+	$yazarlar = $post_id ? get_the_terms( (int) $post_id, 'akademisyen' ) : false;
+	if ( ! is_array( $yazarlar ) || ! $yazarlar ) {
+		return $author;
+	}
+	$adlar = array();
+	foreach ( $yazarlar as $t ) {
+		$adlar[] = trim( get_term_meta( $t->term_id, 'ak_unvan', true ) . ' ' . $t->name );
+	}
+	return esc_html( implode( ', ', $adlar ) );
+}, 10, 2 );
