@@ -343,3 +343,65 @@ function denetim_izi_ilgili() {
 	$tumu = $kat ? '<a class="ilgili-tumu" href="' . esc_url( get_category_link( $kat ) ) . '">' . esc_html( $kat->name ) . ' yazılarının tümü &rarr;</a>' : '';
 	return '<section class="ilgili" aria-labelledby="ilgili-baslik"><div class="w"><div class="ilgili-bas"><h2 id="ilgili-baslik">İlginizi çekebilecek diğer yazılar</h2>' . $tumu . '</div><div class="ilgili-liste">' . $out . '</div></div></section>';
 }
+
+/* ---------------------------------------------------------------
+ * Paylaşım görseli (1.13): her yazı için 1200×630 yeşil kapak
+ * (kategori, kısa konu ifadesi, motif, marka). İlk istekte üretilip
+ * uploads/di-kapak/ altında saklanır; içerik değişince yenisi üretilir.
+ * ------------------------------------------------------------- */
+require_once get_theme_file_path( 'inc/kapak.php' );
+
+function denetim_izi_kapak_url( $post = null ) {
+	if ( ! function_exists( 'imagettftext' ) ) {
+		return '';
+	}
+	if ( $post ) {
+		$kat  = denetim_izi_kategori( $post );
+		$konu = get_post_meta( $post->ID, 'di_konu', true );
+		$v    = array(
+			'kick'  => $kat ? $kat->name : 'Denetim İzi',
+			'konu'  => $konu ? $konu : wp_strip_all_tags( get_the_title( $post ) ),
+			'alt'   => (string) get_post_meta( $post->ID, 'di_konu_alt', true ),
+			'tarih' => get_the_date( 'j F Y', $post ),
+			'motif' => denetim_izi_motif_adi( $post ),
+		);
+		$ad = 'yazi-' . $post->ID;
+	} else {
+		$v  = array( 'kick' => 'Denetim · Suistimal · Uyum', 'konu' => 'Denetim İzi', 'alt' => 'Denetim, suistimal ve uyum üzerine yazılar', 'tarih' => 'denetimizi.com', 'motif' => 'iz' );
+		$ad = 'site';
+	}
+	$up    = wp_upload_dir();
+	$klas  = trailingslashit( $up['basedir'] ) . 'di-kapak';
+	$dosya = $ad . '-' . substr( md5( wp_json_encode( $v ) . '|2' ), 0, 10 ) . '.png';
+	if ( ! file_exists( $klas . '/' . $dosya ) ) {
+		wp_mkdir_p( $klas );
+		foreach ( (array) glob( $klas . '/' . $ad . '-*.png' ) as $eski ) {
+			@unlink( $eski );
+		}
+		$fontlar = array(
+			'serif'  => get_theme_file_path( 'assets/fonts/Literata36pt-SemiBold.ttf' ),
+			'normal' => get_theme_file_path( 'assets/fonts/WorkSans-Regular.ttf' ),
+			'kalin'  => get_theme_file_path( 'assets/fonts/WorkSans-Bold.ttf' ),
+		);
+		if ( ! denetim_izi_kapak_ciz( $v, $klas . '/' . $dosya, $fontlar ) ) {
+			return '';
+		}
+	}
+	return trailingslashit( $up['baseurl'] ) . 'di-kapak/' . $dosya;
+}
+
+add_filter( 'jetpack_open_graph_tags', function ( $tags ) {
+	$post = is_singular( 'post' ) ? get_queried_object() : null;
+	$url  = denetim_izi_kapak_url( $post );
+	if ( ! $url ) {
+		return $tags;
+	}
+	$tags['og:image']        = $url;
+	$tags['og:image:width']  = 1200;
+	$tags['og:image:height'] = 630;
+	$tags['og:image:alt']    = $post ? wp_strip_all_tags( get_the_title( $post ) ) : 'Denetim İzi';
+	$tags['twitter:image']   = $url;
+	$tags['twitter:card']    = 'summary_large_image';
+	unset( $tags['og:image:secure_url'] );
+	return $tags;
+}, 20 );

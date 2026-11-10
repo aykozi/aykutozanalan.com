@@ -1,0 +1,5 @@
+Literata (36pt SemiBold) — Copyright The Literata Project Authors (https://github.com/googlefonts/literata)
+Work Sans (Regular, Bold) — Copyright The Work Sans Project Authors (https://github.com/weiweihuanghuang/Work-Sans)
+
+Both are licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
+Used only to draw the site's social sharing images (inc/kapak.php).
