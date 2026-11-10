@@ -416,7 +416,7 @@ function denetim_izi_arsiv_ust() {
 	$o     = get_queried_object();
 	$dosya = is_category() && $o && 'dosya' === $o->slug;
 	$ust   = is_category() ? 'Kategori' : ( is_tag() ? 'Etiket' : 'Arşiv' );
-	$baslik = wp_strip_all_tags( get_the_archive_title() );
+	$baslik = ( is_category() || is_tag() ) ? single_term_title( '', false ) : wp_strip_all_tags( get_the_archive_title() );
 	$acik   = is_category() || is_tag() ? term_description() : '';
 	global $wp_query;
 	$video = get_theme_file_uri( 'assets/video/' . ( $dosya ? 'dosyalar' : 'yazi' ) );
