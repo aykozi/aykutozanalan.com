@@ -405,3 +405,34 @@ add_filter( 'jetpack_open_graph_tags', function ( $tags ) {
 	unset( $tags['og:image:secure_url'] );
 	return $tags;
 }, 20 );
+
+/* Arşiv sayfaları (1.13.1): videolu başlık şeridi ve şeritli kartlar. */
+add_action( 'init', function () {
+	register_block_type( 'denetim-izi/arsiv-ust', array( 'api_version' => 3, 'render_callback' => 'denetim_izi_arsiv_ust' ) );
+	register_block_type( 'denetim-izi/arsiv', array( 'api_version' => 3, 'render_callback' => 'denetim_izi_arsiv' ) );
+}, 7 );
+
+function denetim_izi_arsiv_ust() {
+	$o     = get_queried_object();
+	$dosya = is_category() && $o && 'dosya' === $o->slug;
+	$ust   = is_category() ? 'Kategori' : ( is_tag() ? 'Etiket' : 'Arşiv' );
+	$baslik = wp_strip_all_tags( get_the_archive_title() );
+	$acik   = is_category() || is_tag() ? term_description() : '';
+	global $wp_query;
+	$video = get_theme_file_uri( 'assets/video/' . ( $dosya ? 'dosyalar' : 'yazi' ) );
+	return '<header class="ahs has-bgv' . ( $dosya ? ' ahs-dosya' : '' ) . '"><div class="bgv" aria-hidden="true" data-bgv="' . esc_url( $video ) . '"></div>'
+		. '<div class="w"><div class="yhero-in"><div class="ahs-ust"><span>' . esc_html( $ust ) . '</span><span class="sayi">' . (int) $wp_query->found_posts . ' yazı</span></div>'
+		. '<h1>' . esc_html( $baslik ) . '</h1>' . ( $acik ? '<div class="ahs-acik">' . wp_kses_post( $acik ) . '</div>' : '' ) . '</div></div></header>';
+}
+
+function denetim_izi_arsiv() {
+	global $wp_query;
+	if ( ! $wp_query->have_posts() ) {
+		return '<p class="empty">Henüz yazı yok.</p>';
+	}
+	$out = '<div class="sy">' . implode( '', array_map( function ( $p ) {
+		return denetim_izi_serit_kart( $p, 'h2' );
+	}, $wp_query->posts ) ) . '</div>';
+	$sayfa = paginate_links( array( 'prev_text' => 'Önceki', 'next_text' => 'Sonraki' ) );
+	return $out . ( $sayfa ? '<nav class="arsiv-sayfa" aria-label="Sayfalar">' . $sayfa . '</nav>' : '' );
+}

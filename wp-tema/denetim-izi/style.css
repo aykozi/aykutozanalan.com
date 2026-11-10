@@ -3,7 +3,7 @@ Theme Name: Denetim İzi
 Theme URI: https://denetimizi.com
 Author: Aykut Ozan Alan
 Description: Denetim İzi (denetimizi.com) için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.13.0
+Version: 1.13.1
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -488,14 +488,14 @@ footer.ft .ft-imza{color:var(--ink)}
 .motif{display:block}
 .motif .motif-nokta{fill:#D4952B}
 /* ana sayfa: öne çıkan kutu */
-.onc{display:flex;flex-direction:column;gap:14px;min-height:360px;padding:36px 38px 30px;border-radius:10px;background:var(--green);color:var(--on-green);text-decoration:none}
+.onc{display:flex;flex-direction:column;gap:14px;min-height:340px;padding:32px 36px 26px;border-radius:10px;background:var(--green);color:var(--on-green);text-decoration:none}
 .onc .bgv{opacity:.22;border-radius:10px}
 .onc .bgv::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--green) 0%,rgba(20,50,43,.65) 55%,rgba(20,50,43,.25) 100%)}
 .onc-ust{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
 .onc-kick{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-hi)}
 .onc-motif{width:56px;height:56px;color:var(--amber-hi);stroke-width:1.6;opacity:.85;flex:none}
-.onc-baslik{font-family:var(--serif);font-size:clamp(28px,3.4vw,40px);line-height:1.1;letter-spacing:-.015em;font-weight:700;color:#F4F1EA;max-width:600px}
-.onc-ozet{font-size:17.5px;line-height:1.55;color:#C9D6CF;max-width:58ch}
+.lead .onc-baslik,.onc-baslik{margin:0;font-family:var(--serif);font-size:clamp(26px,3vw,36px);line-height:1.1;letter-spacing:-.015em;font-weight:700;color:#F4F1EA;max-width:600px}
+.onc-ozet{font-size:16.5px;line-height:1.55;color:#C9D6CF;max-width:58ch}
 .onc-alt{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid rgba(231,239,234,.18);font-size:13.5px;color:#C9D6CF}
 .onc-oku{color:var(--amber-hi);font-weight:600}
 .onc:hover .onc-baslik{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
@@ -547,3 +547,22 @@ footer.ft .ft-imza{color:var(--ink)}
 .kb-marka{font-weight:600;color:#E7EFEA}
 .kb-marka span{color:#F2C46D}
 @media (max-width:900px){.ilgili-liste{grid-template-columns:minmax(0,1fr);max-width:520px}}
+
+@media (min-width:821px){.lead .stack{align-content:space-between}}
+/* arşiv sayfaları (kategori, etiket, tarih): şeritli başlık ve şeritli kartlar */
+.ahs{background:var(--green);color:var(--on-green)}
+.ahs.ahs-dosya{background:var(--file-bg)}
+.ahs .w{padding-block:52px 44px}
+.ahs .bgv{opacity:.22}
+.ahs .bgv::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--green) 0%,rgba(20,50,43,.6) 50%,rgba(20,50,43,.2) 100%)}
+.ahs.ahs-dosya .bgv::after{background:linear-gradient(90deg,var(--file-bg) 0%,rgba(14,26,43,.55) 50%,rgba(14,26,43,.2) 100%)}
+.ahs-ust{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:14px;border-bottom:1px solid rgba(242,196,109,.4);font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-hi)}
+.ahs-ust .sayi{font-family:var(--mono);font-weight:500;letter-spacing:0;text-transform:none;color:#E7EFEA}
+.ahs h1{font-size:clamp(30px,4vw,44px);line-height:1.12;font-weight:700;margin:1rem 0 .6rem;color:#F4F1EA}
+.ahs p{color:rgba(231,239,234,.8);max-width:62ch}
+@media (max-width:760px){.ahs .bgv::after{background:rgba(20,50,43,.62)}.ahs.ahs-dosya .bgv::after{background:rgba(14,26,43,.62)}}
+.arsiv{padding-block:40px 56px}
+.arsiv .sy{row-gap:44px}
+.arsiv-sayfa{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px;font-size:15px}
+.arsiv-sayfa .page-numbers{padding:6px 12px;border:1px solid var(--rule);border-radius:4px;color:var(--ink);text-decoration:none}
+.arsiv-sayfa .current{background:var(--green);color:var(--on-green);border-color:var(--green)}
