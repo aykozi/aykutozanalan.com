@@ -436,3 +436,19 @@ function denetim_izi_arsiv() {
 	$sayfa = paginate_links( array( 'prev_text' => 'Önceki', 'next_text' => 'Sonraki' ) );
 	return $out . ( $sayfa ? '<nav class="arsiv-sayfa" aria-label="Sayfalar">' . $sayfa . '</nav>' : '' );
 }
+
+/*
+ * Tek dosyalar sayfası (1.13.3): "Dosya" kategorisinin otomatik arşivi
+ * yerine her yerde /dosyalar/ sayfası kullanılır; eski adres oraya kalıcı
+ * olarak yönlenir.
+ */
+add_filter( 'term_link', function ( $url, $term, $taxonomy ) {
+	return ( 'category' === $taxonomy && 'dosya' === $term->slug ) ? home_url( '/dosyalar/' ) : $url;
+}, 10, 3 );
+
+add_action( 'template_redirect', function () {
+	if ( is_category( 'dosya' ) ) {
+		wp_safe_redirect( home_url( '/dosyalar/' ), 301 );
+		exit;
+	}
+} );
