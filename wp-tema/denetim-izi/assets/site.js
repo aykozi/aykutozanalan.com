@@ -48,6 +48,7 @@
 			b.setAttribute('data-bgv', vdir + (m && DOSYA_VIDEOLARI.indexOf(m[1]) > -1 ? 'dosya-' + m[1] : 'dosyalar'));
 		});
 		document.querySelectorAll('[data-bgv-ak]').forEach(function (b) { b.setAttribute('data-bgv', vdir + 'akademik'); });
+		document.querySelectorAll('[data-bgv-yazi]').forEach(function (b) { b.setAttribute('data-bgv', vdir + 'yazi'); });
 		var boxes = document.querySelectorAll('[data-bgv]');
 		if (!boxes.length) { return; }
 		var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;

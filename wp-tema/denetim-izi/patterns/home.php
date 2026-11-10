@@ -9,29 +9,7 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 ?>
 <!-- wp:group {"className":"w","layout":{"type":"default"}} -->
 <div class="wp-block-group w"><!-- wp:group {"tagName":"section","className":"lead","layout":{"type":"default"}} -->
-<section class="wp-block-group lead"><!-- wp:group {"className":"lead-box has-bgv","layout":{"type":"default"}} -->
-<div class="wp-block-group lead-box has-bgv"><!-- wp:html -->
-<div class="bgv" aria-hidden="true" data-bgv="<?php echo $aoa_v; ?>yazi"></div>
-<!-- /wp:html -->
-
-<!-- wp:query {"queryId":1,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false,"sticky":""},"className":"lead-main"} -->
-<div class="wp-block-query lead-main"><!-- wp:post-template -->
-<!-- wp:post-terms {"term":"category","className":"kick"} /-->
-<!-- wp:post-title {"level":1,"isLink":true} /-->
-<!-- wp:post-excerpt {"moreText":"","excerptLength":45} /-->
-<!-- wp:post-date {"format":"j F Y"} /-->
-<!-- /wp:post-template -->
-
-<!-- wp:query-no-results -->
-<!-- wp:html -->
-<div class="kick">Hoş geldiniz</div>
-<h1>Denetim, suistimal ve uyum üzerine notlar</h1>
-<p class="dek">Kamu ve özel sektörde on beş yıllık denetim ve inceleme deneyiminden analizler, yöntem dosyaları ve kaynaklar. İlk yazılar hazırlanıyor; o zamana kadar Dosyalar bölümüne göz atabilirsiniz.</p>
-<div class="by">Aykut Ozan Alan</div>
-<!-- /wp:html -->
-<!-- /wp:query-no-results --></div>
-<!-- /wp:query --></div>
-<!-- /wp:group -->
+<section class="wp-block-group lead"><!-- wp:denetim-izi/one-cikan /-->
 
 <!-- wp:html -->
 <div class="stack">
@@ -47,20 +25,7 @@ $aoa_v = esc_url( get_theme_file_uri( 'assets/video/' ) );
 <div class="sec-head"><h2>Son yazılar</h2></div>
 <!-- /wp:html -->
 
-<!-- wp:query {"queryId":2,"query":{"perPage":3,"pages":0,"offset":1,"postType":"post","order":"desc","orderBy":"date","inherit":false},"className":"cards"} -->
-<div class="wp-block-query cards"><!-- wp:post-template -->
-<!-- wp:post-terms {"term":"category"} /-->
-<!-- wp:post-title {"level":3,"isLink":true} /-->
-<!-- wp:post-excerpt {"moreText":"","excerptLength":24} /-->
-<!-- wp:post-date {"format":"j F Y"} /-->
-<!-- /wp:post-template -->
-
-<!-- wp:query-no-results -->
-<!-- wp:html -->
-<p class="empty">İlk analizler hazırlanıyor. Yayımlandıkça burada yer alacak.</p>
-<!-- /wp:html -->
-<!-- /wp:query-no-results --></div>
-<!-- /wp:query --></section>
+<!-- wp:denetim-izi/son-yazilar /--></section>
 <!-- /wp:group -->
 
 </div>

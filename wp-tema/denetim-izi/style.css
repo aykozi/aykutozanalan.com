@@ -3,7 +3,7 @@ Theme Name: Denetim İzi
 Theme URI: https://denetimizi.com
 Author: Aykut Ozan Alan
 Description: Denetim İzi (denetimizi.com) için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.11.8
+Version: 1.12.0
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -483,3 +483,67 @@ footer.ft .ft-imza{color:var(--ink)}
 .abone-sonu{max-width:720px;margin:0 auto 56px;padding:22px 24px;border:1px solid var(--rule);border-radius:8px;background:var(--paper-2);display:grid;gap:12px}
 .abone-sonu b{font-family:var(--serif);font-size:19px}
 .abone-sonu p{margin:.2rem 0 0;color:var(--soft);font-size:15px}
+
+/* 1.12 yazı görselleri ------------------------------------------------ */
+.motif{display:block}
+.motif .motif-nokta{fill:#D4952B}
+/* ana sayfa: öne çıkan kutu */
+.onc{display:flex;flex-direction:column;gap:14px;min-height:360px;padding:36px 38px 30px;border-radius:10px;background:var(--green);color:var(--on-green);text-decoration:none}
+.onc .bgv{opacity:.22;border-radius:10px}
+.onc .bgv::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--green) 0%,rgba(20,50,43,.65) 55%,rgba(20,50,43,.25) 100%)}
+.onc-ust{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.onc-kick{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-hi)}
+.onc-motif{width:56px;height:56px;color:var(--amber-hi);stroke-width:1.6;opacity:.85;flex:none}
+.onc-baslik{font-family:var(--serif);font-size:clamp(28px,3.4vw,40px);line-height:1.1;letter-spacing:-.015em;font-weight:700;color:#F4F1EA;max-width:600px}
+.onc-ozet{font-size:17.5px;line-height:1.55;color:#C9D6CF;max-width:58ch}
+.onc-alt{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid rgba(231,239,234,.18);font-size:13.5px;color:#C9D6CF}
+.onc-oku{color:var(--amber-hi);font-weight:600}
+.onc:hover .onc-baslik{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.onc:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+@media (max-width:760px){.onc{padding:26px 22px 22px;min-height:0}.onc .bgv::after{background:rgba(20,50,43,.62)}}
+/* ana sayfa: son yazılar, ince kategori şeridi */
+.sy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.sy-k{display:flex;flex-direction:column;gap:6px;min-width:0}
+.sy-serit{display:flex;align-items:center;justify-content:space-between;gap:12px;height:44px;padding:0 10px 0 16px;margin-bottom:8px;border-radius:8px;background:var(--kr,#14322B);text-decoration:none}
+.sy-bilgi{display:flex;align-items:baseline;gap:12px;min-width:0;white-space:nowrap;overflow:hidden}
+.sy-kick{font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-hi)}
+.sy-tarih{font-family:var(--mono);font-size:12px;color:#E7EFEA}
+.sy-motif{width:30px;height:30px;flex:none;color:var(--amber-hi);stroke-width:6;opacity:.9}
+.sy-baslik{font-size:20px;line-height:1.28;font-weight:600;margin:0}
+.sy-baslik a{color:var(--ink);text-decoration:none}
+.sy-baslik a:hover{text-decoration:underline;text-decoration-thickness:1px}
+.sy-ozet{color:var(--soft);font-size:15px;margin:0}
+@media (max-width:820px){.sy{grid-template-columns:minmax(0,1fr);gap:28px}}
+/* yazı sayfası: videolu şerit başlık */
+.yhero{background:var(--green);color:var(--on-green)}
+.yhero .w{padding-block:56px 44px}
+.yhero-in{max-width:720px;margin-inline:auto}
+.yhero-ust{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:14px;border-bottom:1px solid rgba(242,196,109,.4)}
+.yhero .kick,.yhero .kick a{color:var(--amber-hi);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase}
+.yhero .tarih{font-family:var(--mono);font-size:18px;line-height:1;color:#F4F1EA}
+.yhero .wp-block-post-title{font-size:clamp(30px,4vw,42px);line-height:1.12;font-weight:700;letter-spacing:-.01em;margin:1.1rem 0 .8rem;color:#F4F1EA}
+.yhero .by{font-size:15px;color:var(--on-green)}
+.yhero .bgv{opacity:.22}
+.yhero .bgv::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--green) 0%,rgba(20,50,43,.6) 50%,rgba(20,50,43,.2) 100%)}
+@media (max-width:760px){.yhero .w{padding-block:40px 34px}.yhero .bgv::after{background:rgba(20,50,43,.62)}.yhero .tarih{font-size:15px}}
+.article-yazi{padding-top:44px}
+.article-yazi .wp-block-post-content{margin-top:0}
+/* yazı sonu: ilginizi çekebilecek diğer yazılar */
+.ilgili{background:var(--paper-2);border-block:1px solid var(--rule);margin-bottom:44px}
+.ilgili .w{padding-block:44px 52px;display:grid;gap:24px}
+.ilgili-bas{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.ilgili-bas h2{font-size:26px;font-weight:600}
+.ilgili-tumu{font-size:14.5px}
+.ilgili-liste{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.kb{position:relative;overflow:hidden;container-type:inline-size;aspect-ratio:1200/630;border-radius:8px;background:#14322B;color:#E7EFEA;text-decoration:none;padding:4.9cqw 5.9cqw 4.2cqw;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 0 rgba(20,50,43,.06),0 8px 22px rgba(20,50,43,.10);transition:transform .15s ease}
+.kb:hover{transform:translateY(-2px)}
+.kb-motif{position:absolute;right:4cqw;top:50%;transform:translateY(-50%);width:40cqw;height:40cqw;color:#F2C46D;stroke-width:1.6;opacity:.8}
+.kb > span{position:relative}
+.kb-kick{font-size:3.4cqw;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2C46D}
+.kb-orta{display:flex;flex-direction:column;gap:1.7cqw;max-width:52cqw}
+.kb-konu{font-family:var(--serif);font-size:7.4cqw;line-height:1.08;font-weight:600;color:#F4F1EA;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.kb-alt{font-size:3.6cqw;line-height:1.35;color:#C9D6CF}
+.kb-son{display:flex;justify-content:space-between;align-items:center;font-size:3.6cqw;color:#C9D6CF}
+.kb-marka{font-weight:600;color:#E7EFEA}
+.kb-marka span{color:#F2C46D}
+@media (max-width:900px){.ilgili-liste{grid-template-columns:minmax(0,1fr);max-width:520px}}
