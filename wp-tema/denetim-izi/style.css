@@ -3,7 +3,7 @@ Theme Name: Denetim İzi
 Theme URI: https://denetimizi.com
 Author: Aykut Ozan Alan
 Description: Denetim İzi (denetimizi.com) için dergi düzeninde blok tema: gündem şeridi, analizler, dosyalar ve akademik çalışmalar.
-Version: 1.12.0
+Version: 1.12.1
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -535,15 +535,15 @@ footer.ft .ft-imza{color:var(--ink)}
 .ilgili-bas h2{font-size:26px;font-weight:600}
 .ilgili-tumu{font-size:14.5px}
 .ilgili-liste{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-.kb{position:relative;overflow:hidden;container-type:inline-size;aspect-ratio:1200/630;border-radius:8px;background:#14322B;color:#E7EFEA;text-decoration:none;padding:4.9cqw 5.9cqw 4.2cqw;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 0 rgba(20,50,43,.06),0 8px 22px rgba(20,50,43,.10);transition:transform .15s ease}
+.kb{position:relative;overflow:hidden;container-type:inline-size;aspect-ratio:1200/630;border-radius:8px;background:#14322B;color:#E7EFEA;text-decoration:none;padding:5.4% 6% 4.6%;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 0 rgba(20,50,43,.06),0 8px 22px rgba(20,50,43,.10);transition:transform .15s ease}
 .kb:hover{transform:translateY(-2px)}
-.kb-motif{position:absolute;right:4cqw;top:50%;transform:translateY(-50%);width:40cqw;height:40cqw;color:#F2C46D;stroke-width:1.6;opacity:.8}
+.kb-motif{position:absolute;right:5%;top:50%;transform:translateY(-50%);width:38cqw;height:38cqw;color:#F2C46D;stroke-width:1.6;opacity:.8}
 .kb > span{position:relative}
-.kb-kick{font-size:3.4cqw;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2C46D}
-.kb-orta{display:flex;flex-direction:column;gap:1.7cqw;max-width:52cqw}
-.kb-konu{font-family:var(--serif);font-size:7.4cqw;line-height:1.08;font-weight:600;color:#F4F1EA;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.kb-alt{font-size:3.6cqw;line-height:1.35;color:#C9D6CF}
-.kb-son{display:flex;justify-content:space-between;align-items:center;font-size:3.6cqw;color:#C9D6CF}
+.kb-kick{font-size:3.9cqw;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2C46D}
+.kb-orta{display:flex;flex-direction:column;gap:1.8cqw;max-width:58cqw}
+.kb-konu{font-family:var(--serif);font-size:8.2cqw;line-height:1.08;font-weight:600;color:#F4F1EA;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.kb-alt{font-size:4.1cqw;line-height:1.35;color:#C9D6CF}
+.kb-son{display:flex;justify-content:space-between;align-items:center;font-size:4.1cqw;color:#C9D6CF}
 .kb-marka{font-weight:600;color:#E7EFEA}
 .kb-marka span{color:#F2C46D}
 @media (max-width:900px){.ilgili-liste{grid-template-columns:minmax(0,1fr);max-width:520px}}
