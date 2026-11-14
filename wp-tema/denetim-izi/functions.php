@@ -237,6 +237,10 @@ function denetim_izi_motifler() {
 
 function denetim_izi_motif_adi( $post ) {
 	$m = get_post_meta( $post->ID, 'di_motif', true );
+	/* "hafta" (Gündem) yedek diziye eklenmez; aksi hâlde di_motif alanı boş yazıların motifi kayar. */
+	if ( 'hafta' === $m ) {
+		return 'hafta';
+	}
 	$hepsi = denetim_izi_motifler();
 	return in_array( $m, $hepsi, true ) ? $m : $hepsi[ $post->ID % count( $hepsi ) ];
 }
@@ -253,6 +257,7 @@ function denetim_izi_motif( $ad, $sinif = '', $kucuk = false ) {
 		'terazi' => array( '<path d="M60 16 V102 M38 104 H82 M22 34 H98"/><path d="M22 34 L10 64 H34 Z M98 34 L86 64 H110 Z"' . $k . '/>', 60, 16 ),
 		'belge'  => array( '<rect x="18" y="12" width="84" height="96" rx="3"/><path d="M18 36 H102 M18 60 H102 M18 84 H102 M46 12 V108 M74 12 V108"' . $k . '/>', 60, 72 ),
 		'katman' => array( '<path d="M60 20 L106 43 L60 66 L14 43 Z"/><path d="M14 62 L60 85 L106 62"' . $k . '/><path d="M14 81 L60 104 L106 81"' . $k . '/>', 60, 20 ),
+		'hafta'  => array( '<rect x="14" y="22" width="92" height="82" rx="3"/><path d="M14 44 H106 M38 12 V30 M82 12 V30"/><path d="M28 62 h14 M53 62 h14 M78 62 h14 M28 84 h14 M53 84 h14"' . $k . '/>', 85, 84 ),
 	);
 	$m = $p[ $ad ] ?? $p['ag'];
 	return '<svg class="motif ' . esc_attr( $sinif ) . '" viewBox="0 0 120 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">'
@@ -265,7 +270,7 @@ function denetim_izi_kategori( $post ) {
 }
 
 function denetim_izi_kategori_rengi( $kat ) {
-	$renk = array( 'ic-denetim' => '#14322B', 'uyum-ve-aml' => '#7A4E0E', 'dosya' => '#0E1A2B', 'dosyalar' => '#0E1A2B', 'akademik' => '#2E3F4A' );
+	$renk = array( 'ic-denetim' => '#14322B', 'uyum-ve-aml' => '#7A4E0E', 'dosya' => '#0E1A2B', 'dosyalar' => '#0E1A2B', 'akademik' => '#2E3F4A', 'gundem' => '#5B2333' );
 	return $kat && isset( $renk[ $kat->slug ] ) ? $renk[ $kat->slug ] : '#14322B';
 }
 
@@ -274,9 +279,22 @@ function denetim_izi_akademik_disi() {
 	return $ak ? array( $ak->term_id ) : array();
 }
 
+/*
+ * Ana sayfa akışları (öne çıkan kutu, Son yazılar): akademik ve haftalık
+ * Gündem yazıları yer almaz. Kategori yoksa listeye eklenmez, sorgu boş kalmaz.
+ */
+function denetim_izi_akis_disi() {
+	$haric = denetim_izi_akademik_disi();
+	$gd    = get_category_by_slug( 'gundem' );
+	if ( $gd ) {
+		$haric[] = (int) $gd->term_id;
+	}
+	return $haric;
+}
+
 /* Ana sayfa: en son yazı, uzun başlığı içinde taşıyan yeşil kutu. */
 function denetim_izi_one_cikan() {
-	$q = get_posts( array( 'numberposts' => 1, 'category__not_in' => denetim_izi_akademik_disi() ) );
+	$q = get_posts( array( 'numberposts' => 1, 'category__not_in' => denetim_izi_akis_disi() ) );
 	if ( ! $q ) {
 		return '';
 	}
@@ -305,7 +323,7 @@ function denetim_izi_serit_kart( $p, $baslik = 'h3' ) {
 
 /* Ana sayfa: öne çıkandan sonraki üç yazı, ince kategori şeritli kartlar. */
 function denetim_izi_son_yazilar() {
-	$q = get_posts( array( 'numberposts' => 3, 'offset' => 1, 'category__not_in' => denetim_izi_akademik_disi() ) );
+	$q = get_posts( array( 'numberposts' => 3, 'offset' => 1, 'category__not_in' => denetim_izi_akis_disi() ) );
 	if ( ! $q ) {
 		return '<p class="empty">İlk analizler hazırlanıyor. Yayımlandıkça burada yer alacak.</p>';
 	}

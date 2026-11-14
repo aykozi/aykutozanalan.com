@@ -30,8 +30,9 @@ function denetim_izi_kapak_motif_parcalari( $ad ) {
 		'terazi' => array( array( array( array( 60, 16 ), array( 60, 102 ) ), false ), array( array( array( 38, 104 ), array( 82, 104 ) ), false ), array( array( array( 22, 34 ), array( 98, 34 ) ), false ), array( array( array( 22, 34 ), array( 10, 64 ), array( 34, 64 ), array( 22, 34 ) ), true ), array( array( array( 98, 34 ), array( 86, 64 ), array( 110, 64 ), array( 98, 34 ) ), true ) ),
 		'belge'  => array( array( $rect( 18, 12, 84, 96 ), false ), array( array( array( 18, 36 ), array( 102, 36 ) ), true ), array( array( array( 18, 60 ), array( 102, 60 ) ), true ), array( array( array( 18, 84 ), array( 102, 84 ) ), true ), array( array( array( 46, 12 ), array( 46, 108 ) ), true ), array( array( array( 74, 12 ), array( 74, 108 ) ), true ) ),
 		'katman' => array( array( array( array( 60, 20 ), array( 106, 43 ), array( 60, 66 ), array( 14, 43 ), array( 60, 20 ) ), false ), array( array( array( 14, 62 ), array( 60, 85 ), array( 106, 62 ) ), true ), array( array( array( 14, 81 ), array( 60, 104 ), array( 106, 81 ) ), true ) ),
+		'hafta'  => array( array( $rect( 14, 22, 92, 82 ), false ), array( array( array( 14, 44 ), array( 106, 44 ) ), false ), array( array( array( 38, 12 ), array( 38, 30 ) ), false ), array( array( array( 82, 12 ), array( 82, 30 ) ), false ), array( array( array( 28, 62 ), array( 42, 62 ) ), true ), array( array( array( 53, 62 ), array( 67, 62 ) ), true ), array( array( array( 78, 62 ), array( 92, 62 ) ), true ), array( array( array( 28, 84 ), array( 42, 84 ) ), true ), array( array( array( 53, 84 ), array( 67, 84 ) ), true ) ),
 	);
-	$nokta = array( 'iz' => array( 104, 48 ), 'ag' => array( 92, 30 ), 'lisans' => array( 82, 86 ), 'venn' => array( 61, 60 ), 'terazi' => array( 60, 16 ), 'belge' => array( 60, 72 ), 'katman' => array( 60, 20 ) );
+	$nokta = array( 'iz' => array( 104, 48 ), 'ag' => array( 92, 30 ), 'lisans' => array( 82, 86 ), 'venn' => array( 61, 60 ), 'terazi' => array( 60, 16 ), 'belge' => array( 60, 72 ), 'katman' => array( 60, 20 ), 'hafta' => array( 85, 84 ) );
 	$ad = isset( $m[ $ad ] ) ? $ad : 'ag';
 	return array( $m[ $ad ], $nokta[ $ad ] );
 }
